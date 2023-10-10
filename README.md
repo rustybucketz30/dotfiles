@@ -1,5 +1,7 @@
 # RustyBucketz30 Arch Linux Desktop Dotfiles
 
+<!-- Show what it actually looks like here -->
+
 ## Table of Contents
 1. [Firmware/Hardware Configuration](#1-firmwarehardware-configuration)
 2. [Software](#2-software)
