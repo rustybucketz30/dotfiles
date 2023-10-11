@@ -105,7 +105,7 @@ gparted, grub, networkmanager, pacman, yay, htop, git, piper, ufw, rsync, piper,
 ### GUI Software:
 A collection of various GUI-based software for multiple purposes.
 
-other GUI software I use: ccrypt, GnuPG,  mpv, vlc, newsboat, tor, brave,  mullvadVPN, minecraft, discord, obs, gimp, kdenlive, shotcut, godot, blender, qbittorrent, keepassxc, qemu, virtmanager, 7zip, balenaEtcher, Kleopatra
+other GUI software I use: ccrypt, GnuPG,  mpv, vlc, newsboat, tor, brave,  mullvadVPN, minecraft, discord, obs, gimp, kdenlive, shotcut, godot, blender, qbittorrent, keepassxc, qemu, virtmanager, 7zip, balenaEtcher, Kleopatra, neofetch
 
 - **Multimedia**: `mpv`, `vlc`, ...
 - **Security**: `ccrypt`, `GnuPG`, ...
@@ -128,10 +128,10 @@ other GUI software I use: ccrypt, GnuPG,  mpv, vlc, newsboat, tor, brave,  mullv
 - **Additional Icon**: [Link](https://www.pling.com/p/1366371)
 
 ### Themes:
+- **Color Palette**: 
 - **Cursor**: [Apple Cursor](https://github.com/ful1e5/apple_cursor)
 - **Others**: Further theme configurations or suggestions go here.
 
-*Note*: Ensure all credits and permissions are respected for shared resources.
 
 ## 7. Installation
 
@@ -174,3 +174,22 @@ https://github.com/hyper-dot/Arch-Hyprland
 https://github.com/archcraft-os/archcraft-hyprland
 https://github.com/nawfalmrouyan/hyprland
 https://github.com/coffebar/dotfiles
+https://gitlab.com/stephan-raabe/dotfiles
+
+
+GPU passthrough on this?: https://www.youtube.com/watch?v=EujO_5KvCCo
+
+
+These are the default in archinstall 2.6.1:
+added dunst as notification manager
+qt5-wayland, qt6-wayland, xdg-desktop-portal-hpyrland
+btop is kinda fire too
+TODOs:
+- installation steps
+    - flash to installation medium, USB works, use balenaEtcher to flash .iso file onto USB, eject and neter boot menu (F12 on thinkpad)
+    -iwctl, device list, station wlan0 scan, station wlan0 show, station wlan0 connect [WiFi name], then enter password, exit, then "archinstall"
+    https://www.youtube.com/watch?v=E50pt992Ihc
+    - go through installation steps, then 'reboot'
+
+- draw up background image with bucket and name
+- color palette of minecraft bucket
