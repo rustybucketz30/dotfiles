@@ -192,4 +192,11 @@ TODOs:
     - go through installation steps, then 'reboot'
 
 - draw up background image with bucket and name
-- color palette of minecraft bucket
+- color palette of minecraft bucket:
+
+--white: #FFFFFE;
+--platinum: #D8D8D9;
+--silver: #A8A8A8;
+--sky-blue: #87CEFA;
+--blue-crayola: #5B82F2;
+--byzantine-blue: #2E59D3;
