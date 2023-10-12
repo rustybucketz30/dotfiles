@@ -176,6 +176,10 @@ https://github.com/nawfalmrouyan/hyprland
 https://github.com/coffebar/dotfiles
 https://gitlab.com/stephan-raabe/dotfiles
 
+https://github.com/linkfrg/dotfiles
+https://github.com/eneshecan/dotfiles
+https://github.com/lauroro/hyprland-dotfiles
+https://github.com/dxg4268/hyprdots
 
 GPU passthrough on this?: https://www.youtube.com/watch?v=EujO_5KvCCo
 
@@ -183,7 +187,9 @@ GPU passthrough on this?: https://www.youtube.com/watch?v=EujO_5KvCCo
 These are the default in archinstall 2.6.1:
 added dunst as notification manager
 qt5-wayland, qt6-wayland, xdg-desktop-portal-hpyrland
-btop is kinda fire too
+btop is kinda fire too, swappy maybe for screenshots?
+no ranger, no starship
+
 TODOs:
 - installation steps
     - flash to installation medium, USB works, use balenaEtcher to flash .iso file onto USB, eject and neter boot menu (F12 on thinkpad)
@@ -200,3 +206,7 @@ TODOs:
 --sky-blue: #87CEFA;
 --blue-crayola: #5B82F2;
 --byzantine-blue: #2E59D3;
+
+gsettings set org.gnome.desktop.interface gtk-theme adw-gtk3
+gsettings set org.gnome.desktop.interface icon-theme Papirus
+gsettings set org.gnome.desktop.interface font-name "JetBrains Mono Regular 11"
