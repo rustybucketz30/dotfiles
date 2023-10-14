@@ -126,11 +126,27 @@ other GUI software I use: ccrypt, GnuPG,  mpv, vlc, newsboat, tor, brave,  mullv
 
 ## 5. Keybindings
 
-| Key Combination | Action                    | Description                                     |
-|-----------------|---------------------------|-------------------------------------------------|
-| `Super + Enter` | Launch Terminal           | Opens the default terminal (kitty)             |
-| `Super + D`     | Application Launcher      | Opens `Rofi` app launcher                      |
-| ...             | ...                       | ...                                            |
+| Key Combination                      | Action                  | Description                                                   |
+|--------------------------------------|-------------------------|---------------------------------------------------------------|
+| `Super + Space`                      | Launch Terminal         | Opens the default terminal                                    |
+| `Super + Enter`                      | Dolphin                 | Opens the Dolphin file manager                                |
+| `Super + F`                          | Firefox                 | Opens the Firefox web browser                                 |
+| `Super + T`                          | Tor                     | Opens the Tor browser                                         |
+| `Super + Q`                          | Quit Active Window      | Quits the current active window                               |
+| `Super + R`                          | Rofi                    | Opens `Rofi` app launcher                                     |
+| `Super + W`                          | Change Wallpaper        | Changes the current wallpaper                                 |
+| `Super + [1-9]`                      | Switch to Workspace     | Changes to workspace corresponding to the pressed number      |
+| `Super + Ctrl + [1-9]`               | Set Current Layout      | Sets the current layout to workspace corresponding to number |
+| `Super + [arrow key]`                | Move to Window          | Moves to window in the direction of the pressed arrow key     |
+| `Super + ]`                          | Toggle Split            | Toggles the window split                                      |
+| `Super + [`                          | Toggle Float            | Toggles the floating mode for the current window              |
+| `Super + Click and Drag`             | Move Floating Window    | Moves the floating window                                     |
+
+Super + O = OBS
+Super + M = Minecraft
+Super + C = VSCode
+Super + B = Newsboat
+
 
 *Note*: Expand the keybindings, and feel free to categorize them if there are many.
 
