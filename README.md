@@ -146,7 +146,8 @@ Super + O = OBS
 Super + M = Minecraft
 Super + C = VSCode
 Super + B = Newsboat
-
+Super + K = KeyPassXC
+Super + N = new text file? or specific text file
 
 *Note*: Expand the keybindings, and feel free to categorize them if there are many.
 
