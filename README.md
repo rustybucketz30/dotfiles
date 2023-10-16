@@ -147,7 +147,9 @@ Super + M = Minecraft
 Super + C = VSCode
 Super + B = Newsboat
 Super + K = KeyPassXC
-Super + N = new text file? or specific text file
+Super + N or B = new text file? or specific text file for blog
+Super + L = monthly list in md format
+Super + G = GIMP
 
 *Note*: Expand the keybindings, and feel free to categorize them if there are many.
 
