@@ -27,31 +27,21 @@
 
 ## 1. Firmware/Hardware Configuration
 
-NVIDIA 1660 Ti
-pipewire, bluetooth
-### Configuration-type Software:
 Tools used to setup, configure, and manage various aspects of the system.
 
-- `gparted`, `grub`, `networkmanager`, `pacman`, `yay`, `htop`, `git`, ...
-gparted, grub, networkmanager, pacman, yay, htop, git, piper, ufw, rsync, piper, libratbag, g810-led, xbindkeys, python, java, pip, timeshift, pfetch, neofetch
+performance monitoring - btop
+configure firewall, vpn - ufw, mullvap-vpn
+configure keybindings for keyboard (Logitech G810 Wired) - piper, libratbag, g810-led, xbind-keys
+file backup and sync - rsync, timeshift
 
-### Partitioning & OS Installation:
-- **250GB SSD:**
-    - Windows: 150GB (NTFS)
-    - Arch Linux:
-        - EFI: 512MB (FAT32)
-        - Root (/): 30GB (Ext4)
-        - Swap: Match RAM or min. 4GB
-        - Home (/home): Remaining space (Ext4)
-- **1TB HDD:** Mix of NTFS and Ext4, based on access needs.
-- **8TB HDD:** NTFS for cross-OS access
-- **2TB External HDD:** NTFS for portability.
+somethign for audio mngmt?, bluetooth devices?
+Graphics Drivers for NV168 (TU116): NVIDIA 1660 Ti, driver used: nvidia-open
 
 ## 2. Software
 | Category               | Software               | Link                                          |
 |------------------------|------------------------|-----------------------------------------------|
 | Window Manager         | Hyprland               | [Website](https://hyprland.org/)              |
-| Terminal Manager       | kitty                  | [Website](https://sw.kovidgoyal.net/kitty/)   |
+| Terminal Manager       | Alacritty              | [Website](https://alacritty.org/)             |
 | File Manager           | Dolphin                | [GitHub](https://github.com/KDE/dolphin)      |
 | Status Bar             | eww                    | [GitHub](https://github.com/elkowar/eww)      |
 | Launcher               | Rofi                   | [GitHub](https://github.com/davatorium/rofi)  |
@@ -59,11 +49,6 @@ gparted, grub, networkmanager, pacman, yay, htop, git, piper, ufw, rsync, piper,
 | Browser                | Firefox                | [Website](https://www.mozilla.org/en-US/firefox/new/) |
 | Session Manager        | Wlogout                | [GitHub](https://github.com/ArtsyMacaw/wlogout) |
 | Text Editor            | neovim                 | [Website](https://neovim.io/)                 |
-| Font                   | Iosevka - Monospace    | [Website](https://typeof.net/Iosevka/)        |
-| Themes, Cursors, & Icons| [to be determined]    |                                               |
-| Cursor                 | Apple Cursor           | [GitHub](https://github.com/ful1e5/apple_cursor) |
-
-Alacritty - kitty
 
 
 *See [Appendix](#8-appendix--inspiration) for additional software and configurations.*
@@ -169,42 +154,20 @@ Super + N or B = new text file? or specific text file for blog
 Super + L = monthly list in md format
 *Note*: Expand the keybindings, and feel free to categorize them if there are many.
 
-## 6. Icons & Themes
-
-### Icons:
-- **Kora**: [GitHub](https://github.com/bikass/kora), [AUR Package](https://aur.archlinux.org/packages/kora-icon-theme)
-- **Additional Icon**: [Link](https://www.pling.com/p/1366371)
-
-### Themes:
-- **Color Palette**: Depends on background
-- **Cursor**: [Apple Cursor](https://github.com/ful1e5/apple_cursor)
-- **Others**: Further theme configurations or suggestions go here.
-
-
 ## 7. Installation
-
-Setting up the dotfiles and configurations from this repository.
 
 1. **Clone the Repository**: Clone this repository to your local machine.
-   ```bash
-   git clone [Your Repo Link] ~/dotfiles
-
-## 7. Installation
-
-The following steps guide you through the process of setting up your system using these dotfiles. Please read each step thoroughly to avoid any issues.
-
-### Step 1: Clone the Repository
-Clone this repository to your desired location (commonly the home directory):
 
 ```bash
 git clone [Your Repository Link] ~/dotfiles
 ```
 
-Use the install script using 'symlink.sh'
+2. **Install Packages & Symlinks**: Use the install script using 'symlink.sh'
 
 ```bash
 cd ~/dotfiles/scripts
-chmod +x symlink.sh
+chmod +x install.sh symlink.sh
+./install.sh
 ./symlink.sh
 ```
 
@@ -238,12 +201,6 @@ https://github.com/Saimoomedits/eww-widgets
 https://github.com/elkowar/eww
 https://elkowar.github.io/eww/
 
-These are the default in archinstall 2.6.1:
-added dunst as notification manager
-qt5-wayland, qt6-wayland, xdg-desktop-portal-hpyrland
-btop is kinda fire too, swappy maybe for screenshots?
-no ranger, no starship
-
 TODOs:
 - installation steps
     - flash to installation medium, USB works, use balenaEtcher to flash .iso file onto USB, eject and neter boot menu (F12 on thinkpad)
@@ -252,8 +209,10 @@ TODOs:
     - go through installation steps, then 'reboot'
 
 - draw up background image with bucket and name
-- color palette of minecraft bucket:
 
+- **Kora**: [GitHub](https://github.com/bikass/kora), [AUR Package](https://aur.archlinux.org/packages/kora-icon-theme)
+- **Additional Icon**: [Link](https://www.pling.com/p/1366371)
+- color palette of minecraft bucket:
 --white: #FFFFFE;
 --platinum: #D8D8D9;
 --silver: #A8A8A8;
