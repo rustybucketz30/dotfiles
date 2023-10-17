@@ -215,6 +215,12 @@ https://github.com/dxg4268/hyprdots
 
 GPU passthrough on this?: https://www.youtube.com/watch?v=EujO_5KvCCo
 
+https://www.youtube.com/watch?v=_nyStxAI75s
+https://github.com/prasanthrangan/hyprdots
+https://github.com/niraj998/dotfiles/tree/main/.config/eww
+https://github.com/Saimoomedits/eww-widgets
+https://github.com/elkowar/eww
+https://elkowar.github.io/eww/
 
 These are the default in archinstall 2.6.1:
 added dunst as notification manager
