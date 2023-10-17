@@ -27,6 +27,14 @@
 
 ## 1. Firmware/Hardware Configuration
 
+NVIDIA 1660 Ti
+pipewire, bluetooth
+### Configuration-type Software:
+Tools used to setup, configure, and manage various aspects of the system.
+
+- `gparted`, `grub`, `networkmanager`, `pacman`, `yay`, `htop`, `git`, ...
+gparted, grub, networkmanager, pacman, yay, htop, git, piper, ufw, rsync, piper, libratbag, g810-led, xbindkeys, python, java, pip, timeshift, pfetch, neofetch
+
 ### Partitioning & OS Installation:
 - **250GB SSD:**
     - Windows: 150GB (NTFS)
@@ -55,6 +63,9 @@
 | Themes, Cursors, & Icons| [to be determined]    |                                               |
 | Cursor                 | Apple Cursor           | [GitHub](https://github.com/ful1e5/apple_cursor) |
 
+Alacritty - kitty
+
+
 *See [Appendix](#8-appendix--inspiration) for additional software and configurations.*
 
 ## 3. Directory Structure
@@ -62,43 +73,52 @@
 ```
 dotfiles/
 │
-├── hyprland/
-│   ├── hyprland.conf
-│   └── themes/
+├── hypr/
+│ ├── hyprland.conf
+│ ├── keybindings.conf
+│ ├── starthypr.sh
+│ └── gtk.sh
 │
-├── kitty/
-│   └── kitty.conf
-│
-├── dolphin/
-│   └── dolphin.conf
-│
-├── eww/
-│   ├── config.yaml
-│   └── scripts/
-│
-├── rofi/
-│   ├── config.rasi
-│   └── themes/
-│
-├── zsh/
-│   └── .zshrc
+├── alacritty/
+│ └── alacritty.yml
 │
 ├── wlogout/
-│   └── config
+│
+├── waybar/
+│
+├── wallpapers/
+│
+├── wal/
+│
+├── vim/
+│
+├── swaylock/
+│
+├── scripts/
+│
+├── rofi/
+│
+├── ranger/
 │
 ├── nvim/
-│   └── init.vim
 │
+├── login/
+│
+├── gtk/
+│
+├── dunst/
+│
+├── .back/
+│
+├── README.md
+├── 0_install.sh
+├── 1_install.sh
+├── 3_symlink.sh
+└── .bashrc
+
+<!-- None -->
 ├── firefox/
 │   └── userChrome.css  # If you plan to style Firefox
-│
-├── fonts/
-│   ├── nerd-fonts-mononoki/
-│   └── nerd-fonts-jetbrains-mono/
-│
-└── scripts/
-    ├── install.sh
-    └── symlink.sh
 
 ```
 ## 4. Software List & Dependencies
@@ -109,48 +129,44 @@ Essential libraries and tools required to ensure a smooth experience with the co
 - **Essential**: `lxappearance`, ...
 - **Optional**: [Additional dependencies or alternatives]
 
-### Configuration-type Software:
-Tools used to setup, configure, and manage various aspects of the system.
-
-- `gparted`, `grub`, `networkmanager`, `pacman`, `yay`, `htop`, `git`, ...
-gparted, grub, networkmanager, pacman, yay, htop, git, piper, ufw, rsync, piper, libratbag, g810-led, xbindkeys, python, java, pip, timeshift,
-  
 ### GUI Software:
 A collection of various GUI-based software for multiple purposes.
 
-other GUI software I use: ccrypt, GnuPG,  mpv, vlc, newsboat, tor, brave,  mullvadVPN, minecraft, discord, obs, gimp, kdenlive, shotcut, godot, blender, qbittorrent, keepassxc, qemu, virtmanager, 7zip, balenaEtcher, Kleopatra, neofetch
+- **Multimedia**: `mpv`, `vlc`, `obs`, `kdenlive`, `shotcut`, `gimp`, `blender`
+- **Security**: `ccrypt`, `GnuPG`, `mullvadVPN`, `Kleopatra`, `7zip`
+- **Gaming**: `minecraft`, `godot`, `discord`
+- **Internet & Communication**: `tor`, `newsboat`, `qbittorrent`
+- **Utilities**: `balenaEtcher`, `keepassxc`, `neofetch`, `qemu`, `virtmanager`
 
-- **Multimedia**: `mpv`, `vlc`, ...
-- **Security**: `ccrypt`, `GnuPG`, ...
-- **Gaming**: `minecraft`, ...
+
 
 ## 5. Keybindings
 
-| Key Combination                      | Action                  | Description                                                   |
-|--------------------------------------|-------------------------|---------------------------------------------------------------|
-| `Super + Space`                      | Launch Terminal         | Opens the default terminal                                    |
-| `Super + Enter`                      | Dolphin                 | Opens the Dolphin file manager                                |
-| `Super + F`                          | Firefox                 | Opens the Firefox web browser                                 |
-| `Super + T`                          | Tor                     | Opens the Tor browser                                         |
-| `Super + Q`                          | Quit Active Window      | Quits the current active window                               |
-| `Super + R`                          | Rofi                    | Opens `Rofi` app launcher                                     |
-| `Super + W`                          | Change Wallpaper        | Changes the current wallpaper                                 |
-| `Super + [1-9]`                      | Switch to Workspace     | Changes to workspace corresponding to the pressed number      |
-| `Super + Ctrl + [1-9]`               | Set Current Layout      | Sets the current layout to workspace corresponding to number |
-| `Super + [arrow key]`                | Move to Window          | Moves to window in the direction of the pressed arrow key     |
-| `Super + ]`                          | Toggle Split            | Toggles the window split                                      |
-| `Super + [`                          | Toggle Float            | Toggles the floating mode for the current window              |
-| `Super + Click and Drag`             | Move Floating Window    | Moves the floating window                                     |
+| Key Combination                      | Action                  |
+|--------------------------------------|-------------------------|
+| `Super + Space`                      | Launch Terminal         |
+| `Super + Enter`                      | Dolphin                 |
+| `Super + F`                          | Firefox                 |
+| `Super + T`                          | Tor                     |
+| `Super + BACKSPACE`                  | Quit Active Window      |
+| `Super + R`                          | Rofi                    |
+| `Super + SHIFT + W`                  | Change Wallpaper        |
+| `Super + [1-9]`                      | Switch to Workspace     |
+| `Super + Ctrl + [1-9]`               | Set Current Layout      |
+| `Super + [arrow key]`                | Move to Window          |
+| `Super + ]`                          | Toggle Split            |
+| `Super + [`                          | Toggle Float            |
+| `Super + Click and Drag`             | Move Floating Window    |
+| `Super + O`                          | OBS                     |
+| `Super + M`                          | Minecraft               |
+| `Super + C`                          | VSCode                  |
+| `Super + B`                          | Newsboat                |
+| `Super + K`                          | KeyPassXC               |
+| `Super + G`                          | GIMP                    |
 
-Super + O = OBS
-Super + M = Minecraft
-Super + C = VSCode
-Super + B = Newsboat
-Super + K = KeyPassXC
+
 Super + N or B = new text file? or specific text file for blog
 Super + L = monthly list in md format
-Super + G = GIMP
-
 *Note*: Expand the keybindings, and feel free to categorize them if there are many.
 
 ## 6. Icons & Themes
@@ -160,7 +176,7 @@ Super + G = GIMP
 - **Additional Icon**: [Link](https://www.pling.com/p/1366371)
 
 ### Themes:
-- **Color Palette**: 
+- **Color Palette**: Depends on background
 - **Cursor**: [Apple Cursor](https://github.com/ful1e5/apple_cursor)
 - **Others**: Further theme configurations or suggestions go here.
 
