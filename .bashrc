@@ -3,104 +3,46 @@
 [[ $- != *i* ]] && return
 PS1='[\u@\h \W]\$ '
 
-# -----------------------------------------------------
-# ALIASES
-# -----------------------------------------------------
 
+# ALIASES
 alias c='clear'
 alias nf='neofetch'
 alias pf='pfetch'
 alias ls='exa -al'
 alias shutdown='systemctl poweroff'
-alias v='nvim'
 alias ts='~/dotfiles/scripts/snapshot.sh'
 alias matrix='cmatrix'
 alias wifi='nmtui'
-alias od='~/private/onedrive.sh'
 alias rw='~/dotfiles/waybar/reload.sh'
 alias winclass="xprop | grep 'CLASS'"
 alias dot="cd ~/dotfiles"
 
-# -----------------------------------------------------
-# Window Managers
-# -----------------------------------------------------
+# New ones
+# alias Hy="Hyprland"
+# alias obs="obs-studio"
+# alias news="newsboat"
+# alias mc="minecraft-launcher"
+# alias kp="keepassxc ~/dotfiles/config.kdbx"
+# alias kpm="keepassxc ~/dotfiles/config.kdbx --keyfile ~/dotfiles/config.key"
+alias notes='vim ~/notes.txt'
 
-alias Qtile='startx'
 
-# -----------------------------------------------------
 # GIT
-# -----------------------------------------------------
-
-alias gs="git status"
 alias ga="git add"
 alias gc="git commit -m"
 alias gp="git push"
 alias gpl="git pull"
-alias gst="git stash"
-alias gsp="git stash; git pull"
-alias gcheck="git checkout"
 
-# -----------------------------------------------------
+
 # SCRIPTS
-# -----------------------------------------------------
-
 alias wallp='~/dotfiles/scripts/updatewal.sh'
 alias gr='python ~/dotfiles/scripts/growthrate.py'
-alias ChatGPT='python ~/mychatgpt/mychatgpt.py'
 alias chat='python ~/mychatgpt/mychatgpt.py'
-
-# -----------------------------------------------------
-# VIRTUAL MACHINE
-# -----------------------------------------------------
-
-alias vm='~/private/launchvm.sh'
-alias lg='~/dotfiles/scripts/looking-glass.sh'
-alias vmstart='virsh --connect qemu:///system start win11'
-alias vmstop='virsh --connect qemu:///system destroy win11'
-
-# -----------------------------------------------------
-# EDIT CONFIG FILES
-# -----------------------------------------------------
-
-alias confq='nvim ~/dotfiles/qtile/config.py'
-alias confp='nvim ~/dotfiles/picom/picom.conf'
 alias confb='nvim ~/dotfiles/.bashrc'
 
-# -----------------------------------------------------
-# EDIT NOTES
-# -----------------------------------------------------
-
-alias notes='vim ~/notes.txt'
-
-# -----------------------------------------------------
-# SYSTEM
-# -----------------------------------------------------
 
 alias update-grub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
-alias setkb='setxkbmap de;echo "Keyboard set back to de."'
-
-# -----------------------------------------------------
-# SCREEN RESOLUTINS
-# -----------------------------------------------------
-
-# Qtile
-alias res1='xrandr --output DisplayPort-0 --mode 2560x1440 --rate 120'
-alias res2='xrandr --output DisplayPort-0 --mode 1920x1080 --rate 120'
-
-export PATH="/usr/lib/ccache/bin/:$PATH"
-
-# -----------------------------------------------------
-# START STARSHIP
-# -----------------------------------------------------
 eval "$(starship init bash)"
-
-# -----------------------------------------------------
-# PYWAL
-# -----------------------------------------------------
 cat ~/.cache/wal/sequences
-
-# -----------------------------------------------------
-# PFETCH
-# -----------------------------------------------------
 echo ""
 pfetch
