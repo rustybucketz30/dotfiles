@@ -40,7 +40,6 @@ swww img $wallpaper \
     --transition-pos "$( hyprctl cursorpos )"
 
 ~/dotfiles/waybar/launch.sh
-sleep 1
 
 # ----------------------------------------------------- 
 # Send notification
