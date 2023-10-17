@@ -41,9 +41,4 @@ swww img $wallpaper \
 
 ~/dotfiles/waybar/launch.sh
 
-# ----------------------------------------------------- 
-# Send notification
-# ----------------------------------------------------- 
-notify-send "Colors and Wallpaper updated" "with image $newwall"
-
 echo "DONE!"
