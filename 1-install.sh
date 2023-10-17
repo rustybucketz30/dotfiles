@@ -67,8 +67,7 @@ echo "-> Install main packages"
 packagesPacman=(
     "pacman-contrib"
     "alacritty" 
-    "rofi" 
-    "chromium" 
+    "rofi"
     "nitrogen" 
     "dunst" 
     "starship"
@@ -82,7 +81,6 @@ packagesPacman=(
     "ttf-fira-sans" 
     "ttf-fira-code" 
     "ttf-firacode-nerd" 
-    "figlet" 
     "lxappearance" 
     "breeze" 
     "breeze-gtk" 
@@ -98,6 +96,7 @@ packagesPacman=(
     "xautolock" 
     "blueman"
     "nautilus"
+    "neofetch"
 );
 
 packagesYay=(
