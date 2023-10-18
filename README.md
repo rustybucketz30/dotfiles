@@ -201,6 +201,8 @@ https://github.com/Saimoomedits/eww-widgets
 https://github.com/elkowar/eww
 https://elkowar.github.io/eww/
 
+https://github.com/InioX/dotfiles/
+
 TODOs:
 - installation steps
     - flash to installation medium, USB works, use balenaEtcher to flash .iso file onto USB, eject and neter boot menu (F12 on thinkpad)
