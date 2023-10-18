@@ -121,8 +121,6 @@ A collection of various GUI-based software for multiple purposes.
 - **Internet & Communication**: `tor`, `newsboat`, `qbittorrent`
 - **Utilities**: `balenaEtcher`, `keepassxc`, `neofetch`, `qemu`, `virtmanager`
 
-
-
 ## 5. Keybindings
 
 | Key Combination                      | Action                  |
@@ -210,7 +208,7 @@ TODOs:
 
 - draw up background image with bucket and name
  - get top 50 AI backgrounds
- - no logout manager - I don't care
+ - toggle for black and white
 
 - **Kora**: [GitHub](https://github.com/bikass/kora), [AUR Package](https://aur.archlinux.org/packages/kora-icon-theme)
 - **Additional Icon**: [Link](https://www.pling.com/p/1366371)
@@ -225,3 +223,8 @@ TODOs:
 gsettings set org.gnome.desktop.interface gtk-theme adw-gtk3
 gsettings set org.gnome.desktop.interface icon-theme Papirus
 gsettings set org.gnome.desktop.interface font-name "JetBrains Mono Regular 11"
+
+
+NOTES:
+ - there is no logout manager (swaylock, etc), b/c mine is a desktop PC and is either off or in use. Install one yourself if you want one
+ - 
