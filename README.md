@@ -77,8 +77,6 @@ dotfiles/
 │
 ├── vim/
 │
-├── swaylock/
-│
 ├── scripts/
 │
 ├── rofi/
@@ -205,12 +203,14 @@ https://github.com/InioX/dotfiles/
 
 TODOs:
 - installation steps
-    - flash to installation medium, USB works, use balenaEtcher to flash .iso file onto USB, eject and neter boot menu (F12 on thinkpad)
+    - flash to installation medium, USB works, use balenaEtcher to flash .iso file onto USB, eject and neter boot menu (F12 on thinkpad, lenono devices - F1 or F2 as well, but that might be UEFI)
     -iwctl, device list, station wlan0 scan, station wlan0 show, station wlan0 connect [WiFi name], then enter password, exit, then "archinstall"
     https://www.youtube.com/watch?v=E50pt992Ihc
     - go through installation steps, then 'reboot'
 
 - draw up background image with bucket and name
+ - get top 50 AI backgrounds
+ - no logout manager - I don't care
 
 - **Kora**: [GitHub](https://github.com/bikass/kora), [AUR Package](https://aur.archlinux.org/packages/kora-icon-theme)
 - **Additional Icon**: [Link](https://www.pling.com/p/1366371)

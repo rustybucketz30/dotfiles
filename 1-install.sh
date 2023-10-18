@@ -93,7 +93,6 @@ packagesPacman=(
     "xdg-desktop-portal-gtk"
     "pavucontrol" 
     "tumbler" 
-    "xautolock" 
     "blueman"
     "nautilus"
     "neofetch"

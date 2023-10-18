@@ -52,14 +52,12 @@ packagesPacman=(
     "waybar" 
     "grim" 
     "slurp"
-    "swayidle"
     "swappy"
     "cliphist"
 );
 
 packagesYay=(
     "swww" 
-    "swaylock-effects" 
     "wlogout"
 );
 
