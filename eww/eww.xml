@@ -1,0 +1,22 @@
+<eww>
+    <definitions>
+        <style name="taskbar-bg">
+            bg = "#333"
+          </style>          
+    </definitions>
+  
+    <windows>
+      <window name="vertical-taskbar" width="50" height="100%">
+        <box>
+            <label>${{shell ~/.config/eww/scripts/datetime.sh}}</label>
+          </box>
+          
+        <button>
+            <label>Click me!</label>
+          </button>
+          <label>Some Text</label>
+          
+      </window>
+    </windows>
+  </eww>
+  
