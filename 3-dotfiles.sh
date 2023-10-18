@@ -92,16 +92,6 @@ _installSymLink .Xresouces ~/.Xresources ~/dotfiles/gtk/.Xresources ~/.Xresource
 _installSymLink .icons ~/.icons ~/dotfiles/gtk/.icons/ ~/
 
 echo "-------------------------------------"
-echo "-> Install Qtile dotfiles"
-echo "-------------------------------------"
-echo ""
-
-_installSymLink qtile ~/.config/qtile ~/dotfiles/qtile/ ~/.config
-_installSymLink polybar ~/.config/polybar ~/dotfiles/polybar/ ~/.config
-_installSymLink picom ~/.config/picom ~/dotfiles/picom/ ~/.config
-_installSymLink .xinitrc ~/.xinitrc ~/dotfiles/qtile/.xinitrc ~/.xinitrc
-
-echo "-------------------------------------"
 echo "-> Install Hyprland dotfiles"
 echo "-------------------------------------"
 echo ""
@@ -110,6 +100,7 @@ _installSymLink hypr ~/.config/hypr ~/dotfiles/hypr/ ~/.config
 _installSymLink waybar ~/.config/waybar ~/dotfiles/waybar/ ~/.config
 _installSymLink wlogout ~/.config/wlogout ~/dotfiles/wlogout/ ~/.config
 _installSymLink swappy ~/.config/swappy ~/dotfiles/swappy/ ~/.config
+_installSymLink eww ~/.config/eww ~/dotfiles/eww ~/.config
 
 # ------------------------------------------------------
 # DONE
