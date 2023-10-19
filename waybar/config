@@ -61,9 +61,9 @@
     },
 
     "custom/rofi": {
-        "format": "",
-        "exec": "rofi -show drun",
-        "on-click": "exec"
+        "format": "Apps",
+        "on-click": "~/dotfiles/scripts/applauncher.sh",
+        "tooltip": false
     },
     "custom/color_toggle": {
         "format": "",

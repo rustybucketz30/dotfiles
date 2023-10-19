@@ -6,11 +6,15 @@
     /* `otf-font-awesome` is required to be installed for icons */
     font-family: Liberation Mono;
     min-height: 20px;
+    background-color: rgba(0,0,0,0.8);
+    color: @color11;
     background: @background;
 }
 
 window#waybar {
     background: transparent;
+    transition-property: background-color;
+    transition-duration: .5s;
 }
 
 window#waybar.hidden {
@@ -159,4 +163,8 @@ window#waybar.hidden {
 #hyprland-workspaces button {
     background-color: rgba(0,0,0,0.8);
     color: @color11;
+}
+
+#custom-rofi, #pulseaudio, #custom-color_toggle, #custom-power, #clock, #network, #bluetooth, #temperature, #custom-clipboard {
+    background-color: white
 }
