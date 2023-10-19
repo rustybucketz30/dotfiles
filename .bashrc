@@ -15,6 +15,9 @@ alias wifi='nmtui'
 alias rw='~/dotfiles/waybar/reload.sh'
 alias winclass="xprop | grep 'CLASS'"
 alias dot="cd ~/dotfiles"
+alias rm="rm -i"
+alias cp="cp -i"
+alias mv="mv -i"
 
 # New ones
 # alias Hy="Hyprland"
