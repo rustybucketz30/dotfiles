@@ -8,53 +8,20 @@
     "left": 10,
     "right": 0
   },
-  "padding": 10,
   "spacing": 5,
   "include": [
     "~/.config/waybar/modules.json"
   ],
   "modules-top": [
-    "custom/rofi",
-    "pulseaudio",
-    "custom/color_toggle"
+    "pulseaudio"
   ],
-  "modules-center": [
-    "hyprland/workspaces"
-  ],
-  "modules-bottom": [
-    "custom/power",
-    "clock",
-    "network",
-    "bluetooth",
-    "temperature",
-    "custom/clipboard"
-  ],
-  "custom/rofi": {
-    "format": "",
-    "exec": "rofi -show drun",
-    "on-click": "exec"
-  },
-  "custom/color_toggle": {
-    "format": "",
-    "exec": "~/dotfiles/scripts/update-colors.sh",
-    "on-click": "exec"
-  },
-  "hyprland/workspaces": {
+  "modules-bottom": [],  "hyprland/workspaces": {
     "on-click": "activate",
     "active-only": false,
     "all-outputs": true,
     "format": "{}",
     "persistent_workspaces": {
-      "*": 5
+      "*": 1
     }
-  },
-  "custom/power": {
-    "format": "",
-    "on-click": "wlogout"
-  },
-  "custom/clipboard": {
-    "format": "",
-    "exec": "cliphist.sh",
-    "on-click": "exec"
   }
 }
