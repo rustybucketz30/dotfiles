@@ -50,6 +50,8 @@ Graphics Drivers for NV168 (TU116): NVIDIA 1660 Ti, driver used: nvidia-open
 | Session Manager        | Wlogout                | [GitHub](https://github.com/ArtsyMacaw/wlogout) |
 | Text Editor            | neovim                 | [Website](https://neovim.io/)                 |
 
+login screen - "ly" or "login" - having trouble configuring ly at the moment
+
 
 *See [Appendix](#8-appendix--inspiration) for additional software and configurations.*
 
