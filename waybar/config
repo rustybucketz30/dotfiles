@@ -1,8 +1,8 @@
 {
     "layer": "top",
     "position": "left",
-    "margin": "10 10 10 10",
-    "width": 48,
+    "margin": "10 10 0 10",
+    "width": 60,
     "modules-left": ["custom/pacman"],
     "modules-center": ["hyprland/workspaces"],
     "modules-right": ["bluetooth","pulseaudio", "network", "custom/power", "clock"],

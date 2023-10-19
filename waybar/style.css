@@ -36,7 +36,7 @@ window#waybar.hidden {
   font-style: normal;
   opacity: 0.8;
   font-size: 16px;
-  color: #ffffff;
+  color: @color7;
 }
 
 #workspaces button {
@@ -75,7 +75,7 @@ window#waybar.hidden {
 #custom-power:hover,
 #clock:hover {
   transition: all 0.3s ease-in-out;
-  color: @background;
+  color: @color7;
   background: @color11;
 }
 
