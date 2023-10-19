@@ -1,7 +1,7 @@
 {
     "layer": "top",
     "position": "left",
-    "margin": "10",
+    "margin": "10 10 10 10",
     "width": 100,
     "modules-left": ["custom/pacman","custom/rofi","custom/color_toggle"],
     "modules-center": ["hyprland/workspaces"],
@@ -79,7 +79,7 @@
         "tooltip-format-wifi": "   {essid} ({signalStrength}%)",
         "tooltip-format-ethernet": "  {ifname} ({ipaddr}/{cidr})",
         "tooltip-format-disconnected": "Disconnected",
-        "max-length": 50
+        "max-length": 40
     },
     "custom/power": {
         "format": "",

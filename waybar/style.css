@@ -19,7 +19,6 @@ window#waybar.hidden {
 
 #workspaces {
   background: #ffffff;
-  padding: 0px 1px;
   border: 0px;
   font-weight: bold;
   font-style: normal;
@@ -46,7 +45,7 @@ window#waybar.hidden {
 }
 
 #custom-pacman, #custom-rofi, #custom-color_toggle, #custom-power, #clock, #pulseaudio, #network, #bluetooth.on, #bluetooth.connected {
-  background-color: #ffffff;
+  background-color: transparent;
   font-size: 16px;
   color: @background;
   border-radius: 15px;
