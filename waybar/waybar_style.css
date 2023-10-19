@@ -5,7 +5,7 @@
     border: none;
     border-radius: 5px;
     background-color: rgba(0,0,0,0.8);
-    color: @background;
+    color: @color11;
 }
 
 window#waybar {
@@ -19,6 +19,6 @@ window#waybar {
 }
 
 #hyprland-workspaces button.active {
-    background-color: black;
+    background-color: rgba(0,0,0,0.8);
     color: white;
 }
