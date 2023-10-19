@@ -20,56 +20,96 @@ window#waybar.hidden {
 }
 
 #workspaces {
-    margin-right: 8px;
-    border-radius: 10px;
+    margin-right: 4px;
+    border-radius: 4px;
     transition: none;
     background: @color1;
 }
 
 #custom-pacman {
-    padding-left: 16px;
-    padding-right: 8px;
-    border-radius: 10px 0px 0px 10px;
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 4px 0px 0px 4px;
+    transition: none;
+    color: @color1;
+    background: @color2;
+}
+
+#custom-rofi {
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 4px;
+    transition: none;
+    color: @color1;
+    background: @color3;
+}
+
+#custom-color_toggle {
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 4px;
+    transition: none;
+    color: @color1;
+    background: @color4;
+}
+
+#hyprland-workspaces button.active {
+    background-color: @color5;
+    color: @color1;
+}
+
+#hyprland-workspaces button {
+    background-color: @color6;
+    color: @color1;
+}
+
+#custom-power {
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 4px;
+    transition: none;
+    color: @color1;
+    background: @color7;
+}
+
+#pulseaudio {
+    margin-right: 4px;
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 4px;
+    transition: none;
+    color: @color1;
+    background: @color8;
+}
+
+#pulseaudio.muted {
+    background-color: @color9;
+    color: @color1;
+}
+
+#network {
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 4px;
+    transition: none;
+    color: @color1;
+    background: @color10;
+}
+
+#bluetooth {
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 4px;
     transition: none;
     color: @color1;
     background: @color11;
 }
-
 
 #clock {
     padding-left: 4px;
     padding-right: 4px;
-    border-radius: 10px 0px 0px 10px;
+    border-radius: 4px 0px 0px 4px;
     transition: none;
     color: @color1;
-    background: @color11;
-}
-
-#pulseaudio {
-    margin-right: 8px;
-    padding-left: 16px;
-    padding-right: 16px;
-    border-radius: 10px;
-    transition: none;
-    color: @color1;
-    background: @color11;
-}
-
-#pulseaudio.muted {
-    background-color: @color2;
-    color: @color1;
-}
-
-#hyprland-workspaces button.active {
-    background-color: rgba(0,0,0,0.8);
-    color: @color4;
-}
-
-#hyprland-workspaces button {
-    background-color: rgba(0,0,0,0.8);
-    color: @color11;
-}
-
-#custom-rofi, #pulseaudio, #custom-color_toggle, #custom-power, #clock, #network, #bluetooth, #temperature, #custom-clipboard {
-    background-color: @color3;
+    background: @color2;
 }
