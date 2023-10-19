@@ -46,28 +46,10 @@ Buttons
 ----------------------------------------------------- 
 */
 
-#lock {
-	margin: 10px;
-	border-radius: 20px;
-	background-image: image(url("icons/lock.png"));
-}
-
 #logout {
 	margin: 10px;
 	border-radius: 20px;
 	background-image: image(url("icons/logout.png"));
-}
-
-#suspend {
-	margin: 10px;
-	border-radius: 20px;
-	background-image: image(url("icons/suspend.png"));
-}
-
-#hibernate {
-	margin: 10px;
-	border-radius: 20px;
-	background-image: image(url("icons/hibernate.png"));
 }
 
 #shutdown {
