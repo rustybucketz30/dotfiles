@@ -1,0 +1,76 @@
+{
+    "layer": "top",
+    "position": "left",
+    "margin": "10 0 10 10",
+    "width": 70,
+    "modules-left": ["custom/pacman"],
+    "modules-center": ["hyprland/workspaces"],
+    "modules-right": ["bluetooth","pulseaudio", "network", "custom/power", "clock"],
+    "spacing": 10,
+    "hyprland/workspaces": {
+        "active-only":false,
+        "all-outputs": false,
+        "format": "{}",
+        "on-click": "activate",
+        "persistent_workspaces":{
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": [],
+            "5": []
+        }
+      },
+    "custom/pacman": {
+        "format": "{} ",
+        "interval": 3600,
+        "exec": "(checkupdates;pacman -Qm | aur vercmp) | wc -l",
+        "exec-if": "exit 0",
+        "on-click": "foot sh -c 'yay; echo Done - Press enter to exit; read'; pkill -SIGRTMIN+8 waybar",
+        "signal": 8,
+        "tooltip-position": "right,top",
+        "tooltip": false
+    },  
+    "clock": {
+        "timezone": "America/New_York",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format": "{:%I:%M %p}",
+        "tooltip-position": "right"
+    },
+
+    "pulseaudio": {
+        "scroll-step": 0.5,
+        "format":"{icon}",
+        "format-muted": "",
+        "format-source": "{volume}% ",
+        "format-source-muted": "",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "default": ["", " ", " "]
+        },
+        "on-click": "pavucontrol",
+        "tooltip": false
+    },
+    "bluetooth": {
+        "format": "{icon}",
+        "format-disabled": "",
+        "format-off": "",
+        "interval": 30,
+        "on-click": "blueman-manager",
+        "tooltip": false
+    },
+    "network": {
+        "format": "{ifname}",
+        "format-wifi": "",
+        "format-ethernet": "",
+        "format-disconnected": "睊",
+        "on-click": "nm-connection-editor",
+        "tooltip": false
+    },    
+    "custom/power": {
+        "format": "",
+        "on-click": "wlogout",
+        "tooltip": false
+    }
+}
