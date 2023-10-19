@@ -61,18 +61,15 @@ window#waybar.hidden {
 }
 
 #custom-pacman, #custom-rofi, #custom-color_toggle, #custom-power, #clock {
-        padding-left: 8px;
-        padding-right: 4px;
-        border-radius: 5px;
-        transition: none;
-        color: @color1;
-        background: @color7;
+    color: @color1;
+    background: @color7;
 }
 
 
 #custom-rofi:hover, #custom-pacman:hover, #custom-color_toggle:hover, #custom-power:hover, #clock:hover {
-        color: @color7;
-        background: @color2;
+    transition: all 0.3s ease-in-out;
+    color: @color7;
+    background: @color2;
 }
 
 
