@@ -1,155 +1,130 @@
-@import '../../.cache/wal/colors-waybar.css';
+@import "../../.cache/wal/colors-waybar.css";
 
 * {
-    border: 2px;
-    border-radius: 20px;
-    border-color: @color11;
-    font-family: "Fira Sans Semibold", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
-    background-color: rgba(0,0,0,0.6);
-    color: @color11;
+  font-family: "Fira Sans Semibold", FontAwesome, Roboto, Helvetica, Arial,
+    sans-serif;
+  border: 1px solid @color11;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  margin: 2px 1px 3px 1px;
 }
 
 window#waybar {
-    background: transparent;
-    transition-property: background-color;
-    transition-duration: .5s;
-    border: 2px;
-    border-radius: 20px;
-    border-color: @color11;
+  background: transparent;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
 }
 
 window#waybar.hidden {
-    opacity: 0.2;
+  opacity: 0.2;
+}
+
+#workspaces {
+  background: #ffffff;
+  margin: 2px 1px 3px 1px;
+  padding: 0px 1px;
+  border-radius: 15px;
+  border: 0px;
+  font-weight: bold;
+  font-style: normal;
+  opacity: 0.8;
+  font-size: 16px;
+  color: #ffffff;
 }
 
 #workspaces button {
-    box-shadow: none;
-	text-shadow: none;
-    padding: 0px;
-    color: @foreground;
-    animation: gradient_f 20s ease-in infinite;
-    transition: all 0.5s cubic-bezier(.55,-0.68,.48,1.682);
+  padding: 1px 9px;
+  margin: 3px 3px;
+  border-radius: 15px;
+  border: 0px;
+  color: #ffffff;
+  background-color: @color11;
+  transition: all 0.3s ease-in-out;
+  opacity: 0.4;
 }
 
 #workspaces button.active {
-    background: @background;
-    color: @foreground;
-    animation: gradient_f 2s ease-in infinite;
-    transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
+  color: #ffffff;
+  background: @color11;
+  border-radius: 15px;
+  min-width: 40px;
+  transition: all 0.3s ease-in-out;
+  opacity: 1;
 }
 
 #workspaces button:hover {
-    background: @background;
-    color: @foreground;
-    animation: gradient_f 2s ease-in infinite;
-    transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
+  color: #ffffff;
+  background: @color11;
+  border-radius: 15px;
+  opacity: 0.7;
 }
 
-/* #workspaces:hover {
-    background: @color2;
-
-} */
-
-#workspaces {
-    margin-right: 4px;
-    border-radius: 5px;
-    transition: none;
-    background: @color1;
-}
-
-#custom-pacman {
-    padding-left: 8px;
-    padding-right: 4px;
-    border-radius: 5px 0px 0px 5px;
-    transition: none;
-    color: @color1;
-    background: @color2;
-}
-
-#custom-rofi {
-    padding-left: 8px;
-    padding-right: 4px;
-    border-radius: 5px;
-    transition: none;
-    color: @color1;
-    background: @color3;
-}
-
-#custom-rofi:hover, #custom-pacman:hover {
-    background: @color4;
+#custom-pacman, #custom-rofi, #custom-color_toggle, #custom-power, #clock {
+        padding-left: 8px;
+        padding-right: 4px;
+        border-radius: 5px;
+        transition: none;
+        color: @color1;
+        background: @color7;
 }
 
 
-#custom-color_toggle {
-    padding-left: 8px;
-    padding-right: 4px;
-    border-radius: 5px;
-    transition: none;
-    color: @color1;
-    background: @color4;
+#custom-rofi:hover, #custom-pacman:hover, #custom-color_toggle:hover, #custom-power:hover, #clock:hover {
+        color: @color7;
+        background: @color2;
 }
 
-#hyprland-workspaces button.active {
-    background-color: @color5;
-    color: @color1;
-}
-
-#hyprland-workspaces button {
-    background-color: @color6;
-    color: @color1;
-}
-
-#hyprland-workspaces button:hover {
-    background-color: @color5;
-}
-
-#custom-power {
-    padding-left: 8px;
-    padding-right: 4px;
-    border-radius: 5px;
-    transition: none;
-    color: @color1;
-    background: @color7;
-}
 
 #pulseaudio {
-    margin-right: 4px;
-    padding-left: 8px;
-    padding-right: 8px;
-    border-radius: 5px;
-    transition: none;
-    color: @color1;
-    background: @color8;
+    background-color: #FFFFFF;
+    font-size: 16px;
+    color: @background;
+    border-radius: 15px;
+    padding: 2px 10px 0px 10px;
+    margin: 5px 15px 5px 0px;
+    opacity:0.8;
 }
 
 #pulseaudio.muted {
-    background-color: @color9;
-    color: @color1;
+    background-color: @color11;
+    color: #FFFFFF;
 }
 
 #network {
-    padding-left: 8px;
-    padding-right: 4px;
-    border-radius: 5px;
-    transition: none;
-    color: @color1;
-    background: @color10;
+  background-color: #ffffff;
+  font-size: 16px;
+  color: @background;
+  border-radius: 15px;
+  padding: 2px 10px 0px 10px;
+  margin: 3px 10px 3px 0px;
+  opacity: 0.8;
+  border: 3px solid #ffffff;
 }
 
-#bluetooth {
-    padding-left: 8px;
-    padding-right: 4px;
-    border-radius: 5px;
-    transition: none;
-    color: @color1;
-    background: @color11;
+#network.ethernet {
+  background-color: @color11;
+  color: #ffffff;
 }
 
-#clock {
-    padding-left: 2px;
-    padding-right: 2px;
-    border-radius: 5px 0px 0px 5px;
-    transition: none;
-    color: @color1;
-    background: @color2;
+#network.wifi {
+  background-color: @color11;
+  color: #ffffff;
+}
+
+#bluetooth.on,
+#bluetooth.connected {
+  background-color: #ffffff;
+  font-size: 16px;
+  color: @background;
+  border-radius: 15px;
+  padding: 2px 10px 0px 10px;
+  margin: 5px 15px 5px 0px;
+  opacity: 0.8;
+}
+
+#bluetooth.off {
+  background-color: transparent;
+  padding: 0px;
+  margin: 0px;
 }
