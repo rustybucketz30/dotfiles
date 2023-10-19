@@ -11,7 +11,7 @@
     font-family: "Fira Sans Semibold", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
     border: 2px solid @color11;
     border-radius: 0px;
-    background-color: rgba($color11, 0.8);
+    background-color: rgba(0,0,0,0.8);
 }
 
 window#waybar {
