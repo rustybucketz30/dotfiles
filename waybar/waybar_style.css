@@ -14,17 +14,12 @@ window#waybar {
     transition-duration: .5s;
 }
 
-.window#waybar #modules-top {
+.modules-top {
     background-color: rgba(0,0,0,0.8);
     color: @color11;
 }
 
-.window#waybar #modules-top #custom-clipboard {
-    background-color: rgba(0,0,0,0.8);
-    color: @color11;
-}
-
-.window#waybar #modules-top #custom-clipboard button {
+.modules-bottom {
     background-color: rgba(0,0,0,0.8);
     color: @color11;
 }
