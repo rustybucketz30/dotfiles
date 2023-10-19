@@ -15,7 +15,7 @@ window#waybar {
 }
 
 #custom/rofi {
-    background-color: @color1;
+    background-color: @color11;
 }
 
 #pulseaudio {
