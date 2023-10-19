@@ -14,7 +14,7 @@ window#waybar {
     transition-duration: .5s;
 }
 
-#custom/rofi {
+#custom-rofi {
     background-color: @color11;
 }
 
@@ -22,16 +22,16 @@ window#waybar {
     background-color: @color2;
 }
 
-#custom/color_toggle {
+#custom-color_toggle {
     background-color: @color3;
 }
 
-#hyprland/workspaces button.active {
+#hyprland-workspaces button.active {
     background-color: @color4;
     color: @color0;
 }
 
-#custom/power {
+#custom-power {
     background-color: @color5;
 }
 
@@ -51,6 +51,6 @@ window#waybar {
     background-color: @color9;
 }
 
-#custom/clipboard {
+#custom-clipboard {
     background-color: @color10;
 }
