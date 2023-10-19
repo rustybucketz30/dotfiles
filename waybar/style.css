@@ -11,8 +11,19 @@ body,
   border-radius: 20px;
 }
 
-* {
-  border-width: 0 !important;
+#workspaces,
+#custom-pacman,
+#custom-rofi,
+#custom-color_toggle,
+#custom-power,
+#clock,
+#pulseaudio,
+#network,
+#bluetooth.on,
+#bluetooth.connected,
+#network.ethernet,
+#network.wifi {
+  border-width: 0;
 }
 
 window#waybar.hidden {
