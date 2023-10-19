@@ -204,6 +204,11 @@ https://elkowar.github.io/eww/
 
 https://github.com/InioX/dotfiles/
 
+
+https://github.com/end-4/dots-hyprland
+https://www.youtube.com/watch?v=nNvciN4sGKQ&t=69s
+https://github.com/abaan404/dotfiles
+
 TODOs:
 - installation steps
     - flash to installation medium, USB works, use balenaEtcher to flash .iso file onto USB, eject and neter boot menu (F12 on thinkpad, lenono devices - F1 or F2 as well, but that might be UEFI)
