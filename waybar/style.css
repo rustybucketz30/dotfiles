@@ -2,7 +2,8 @@
 
 * {
   font-family: "Fira Sans Semibold", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
-  border: 4px solid @color11;
+  border: 3px solid @color11;
+  border-radius: 20px;
   background-color: rgba(0, 0, 0, 0.8);
 }
 
