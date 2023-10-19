@@ -43,7 +43,7 @@ Graphics Drivers for NV168 (TU116): NVIDIA 1660 Ti, driver used: nvidia-open
 | Window Manager         | Hyprland               | [Website](https://hyprland.org/)              |
 | Terminal Manager       | Alacritty              | [Website](https://alacritty.org/)             |
 | File Manager           | Dolphin                | [GitHub](https://github.com/KDE/dolphin)      |
-| Status Bar             | eww                    | [GitHub](https://github.com/elkowar/eww)      |
+| Status Bar             | waybar                 | [GitHub](https://github.com/Alexays/Waybar)   |
 | Launcher               | Rofi                   | [GitHub](https://github.com/davatorium/rofi)  |
 | Shell                  | zsh, w/ OhMyZsh        | [GitHub](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH) |
 | Browser                | Firefox                | [Website](https://www.mozilla.org/en-US/firefox/new/) |
@@ -70,7 +70,10 @@ dotfiles/
 ├── wlogout/
 │
 ├── waybar/
-│
+│ ├── config
+│ ├── style.css
+│ └── launch.sh
+|
 ├── wallpapers/
 │
 ├── wal/

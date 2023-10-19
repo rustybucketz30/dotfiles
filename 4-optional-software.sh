@@ -1,0 +1,1 @@
+# firefox, mpv, newsboat, obs, discord, vscodium, gimp, 

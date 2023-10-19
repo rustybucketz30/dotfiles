@@ -49,17 +49,17 @@ Buttons
 #logout {
 	margin: 10px;
 	border-radius: 20px;
-	background-image: image(url("icons/logout.png"));
+	background-image: image(url("logout.png"));
 }
 
 #shutdown {
 	margin: 10px;
 	border-radius: 20px;
-	background-image: image(url("icons/shutdown.png"));
+	background-image: image(url("shutdown.png"));
 }
 
 #reboot {
 	margin: 10px;
 	border-radius: 20px;
-	background-image: image(url("icons/reboot.png"));
+	background-image: image(url("reboot.png"));
 }

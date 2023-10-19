@@ -66,8 +66,7 @@ _installSymLink hypr ~/.config/hypr ~/dotfiles/hypr/ ~/.config
 _installSymLink waybar ~/.config/waybar ~/dotfiles/waybar/ ~/.config
 _installSymLink wlogout ~/.config/wlogout ~/dotfiles/wlogout/ ~/.config
 _installSymLink swappy ~/.config/swappy ~/dotfiles/swappy/ ~/.config
-_installSymLink eww ~/.config/eww ~/dotfiles/eww ~/.config
-
+_installSymLink ly ~/etc/ly/config.ini ~/dotfiles/ly/config.ini ~/etc
 # ------------------------------------------------------
 # DONE
 # ------------------------------------------------------
