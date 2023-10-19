@@ -6,14 +6,6 @@
   transition: background-color 0.5s ease-in-out;
 }
 
-window{
-    background: transparent;
-    transition-property: background-color;
-    transition-duration: 0.5s;
-    border: 3px solid @color11;
-    border-radius: 20px;
-}
-
 window#waybar {
   background: transparent;
 }

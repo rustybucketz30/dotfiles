@@ -3,6 +3,8 @@
     "position": "left",
     "margin": "10 10 10 10",
     "width": 80,
+    "border": 3,
+    "border-radius": 20,
     "modules-left": ["custom/pacman","custom/rofi","custom/color_toggle"],
     "modules-center": ["hyprland/workspaces"],
     "modules-right": ["bluetooth","pulseaudio", "network", "clock", "custom/power"],
