@@ -65,8 +65,7 @@
         "format-wifi": "",
         "format-ethernet": "",
         "format-disconnected": "睊",
-        "onclick": "nm-connection-editor",
-        "max-length": 40,
+        "on-click": "nm-connection-editor",
         "tooltip": false
     },    
     "custom/power": {
