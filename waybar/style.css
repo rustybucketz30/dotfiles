@@ -13,6 +13,9 @@ window#waybar {
     background: transparent;
     transition-property: background-color;
     transition-duration: .5s;
+    border: 2px;
+    border-radius: 20px;
+    border-color: @color11;
 }
 
 window#waybar.hidden {

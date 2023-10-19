@@ -3,9 +3,6 @@
     "position": "left",
     "margin": "10",
     "width": 100,
-    "border": 2,
-    "border-radius": 20,
-    "border-color": "#FFFFFF",
     "modules-left": ["custom/pacman","custom/rofi","custom/color_toggle"],
     "modules-center": ["hyprland/workspaces"],
     "modules-right": ["custom/power","pulseaudio", "network", "bluetooth", "clock"],
@@ -13,24 +10,14 @@
     "hyprland/workspaces": {
         "active-only":false,
         "all-outputs": false,
-        "format": "{icon}",
+        "format": "{}",
         "on-click": "activate",
         "persistent_workspaces":{
             "1": [],
             "2": [],
             "3": [],
             "4": [],
-            "5": [],
-            "6": [],
-            "7": [],
-            "8": [],
-            "9": [],
-            "10": []
-        },
-        "format-icons": {
-          "active": " 󰮯 ",
-          "default": " ",
-          "persistent":"󰑊"
+            "5": []
         }
       },
     "custom/pacman": {
