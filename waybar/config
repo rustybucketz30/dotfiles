@@ -3,9 +3,9 @@
     "position": "left", // Waybar position (top|bottom|left|right)
     "margin": "10 0 10 10",
     "width": 80, // Waybar width
-    "modules-left": ["custom/pacman","custom/rofi","pulseaudio","custom/color_toggle"],
+    "modules-left": ["custom/pacman","custom/rofi","custom/color_toggle"],
     "modules-center": ["clock", "hyprland/workspaces"],
-    "modules-right": ["pulseaudio", "backlight", "tray"],
+    "modules-right": ["pulseaudio", "backlight", "tray", "network"],
 
     "hyprland/workspaces": {
         "on-click": "activate",
@@ -91,5 +91,16 @@
     "tray": {
         "icon-size": 16,
         "spacing": 0
+    },
+    "network": {
+        "format": "{ifname}",
+        "format-wifi": "   {signalStrength}%",
+        "format-ethernet": "  {ipaddr}",
+        "format-disconnected": "", //An empty format will hide the module.
+        "tooltip-format": " {ifname} via {gwaddri}",
+        "tooltip-format-wifi": "   {essid} ({signalStrength}%)",
+        "tooltip-format-ethernet": "  {ifname} ({ipaddr}/{cidr})",
+        "tooltip-format-disconnected": "Disconnected",
+        "max-length": 50
     },
 }

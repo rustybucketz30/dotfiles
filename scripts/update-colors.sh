@@ -1,6 +1,6 @@
 #!/bin/sh
 # toggles between colors and grayscale
-echo "toggling colors"
+sudo echo "toggling colors"
 # # get current color scheme
 # current=$(cat ~/.cache/wal/colors.sh | grep -o "#.*" | head -n 1)
 
