@@ -36,7 +36,7 @@ window#waybar.hidden {
 #workspaces button.active,
 
 #workspaces button:hover {
-  color: #@color7;
+  color: @color7;
   background: @color11;
   opacity: 1;
 }
