@@ -6,20 +6,30 @@
     "modules-left": ["custom/pacman","custom/rofi","custom/color_toggle"],
     "modules-center": ["hyprland/workspaces"],
     "modules-right": ["custom/power","pulseaudio", "network", "bluetooth", "clock"],
-
+    "spacing": 10,
     "hyprland/workspaces": {
+        "active-only":false,
+        "all-outputs": false,
+        "format": "{icon}",
         "on-click": "activate",
-        "active-only": false,
-        "all-outputs": true,
-        "format": "{}",
-        "persistent_workspaces": {
+        "persistent_workspaces":{
             "1": [],
             "2": [],
             "3": [],
             "4": [],
+            "5": [],
+            "6": [],
+            "7": [],
+            "8": [],
+            "9": [],
+            "10": []
         },
+        "format-icons": {
+          "active": " 󰮯 ",
+          "default": " ",
+          "persistent":"󰑊"
+        }
       },
-
     "custom/pacman": {
         "format": "{} ",
         "interval": 3600,

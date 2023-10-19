@@ -1,7 +1,7 @@
 @import '../../.cache/wal/colors-waybar.css';
 
 * {
-    border: none;
+    border: 2px;
     border-radius: 5px;
     border-color: @color11;
     font-family: "Fira Sans Semibold", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
@@ -19,35 +19,69 @@ window#waybar.hidden {
     opacity: 0.2;
 }
 
+#workspaces button {
+    box-shadow: none;
+	text-shadow: none;
+    padding: 0px;
+    color: @foreground;
+    animation: gradient_f 20s ease-in infinite;
+    transition: all 0.5s cubic-bezier(.55,-0.68,.48,1.682);
+}
+
+#workspaces button.active {
+    background: @background;
+    color: @foreground;
+    animation: gradient_f 2s ease-in infinite;
+    transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
+}
+
+#workspaces button:hover {
+    background: @background;
+    color: @foreground;
+    animation: gradient_f 2s ease-in infinite;
+    transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
+}
+
+/* #workspaces:hover {
+    background: @color2;
+    transform: scale(1.1);
+} */
+
 #workspaces {
     margin-right: 4px;
-    border-radius: 4px;
+    border-radius: 5px;
     transition: none;
     background: @color1;
 }
 
 #custom-pacman {
-    padding-left: 4px;
+    padding-left: 8px;
     padding-right: 4px;
-    border-radius: 4px 0px 0px 4px;
+    border-radius: 5px 0px 0px 5px;
     transition: none;
     color: @color1;
     background: @color2;
 }
 
 #custom-rofi {
-    padding-left: 4px;
+    padding-left: 8px;
     padding-right: 4px;
-    border-radius: 4px;
+    border-radius: 5px;
     transition: none;
     color: @color1;
     background: @color3;
 }
 
+#custom-rofi:hover, #custom-pacman:hover {
+    background: @color4;
+    transform: scale(1.1);
+}
+
+
 #custom-color_toggle {
-    padding-left: 4px;
+    padding-left: 8px;
     padding-right: 4px;
-    border-radius: 4px;
+    border-radius: 5px;
     transition: none;
     color: @color1;
     background: @color4;
@@ -63,10 +97,15 @@ window#waybar.hidden {
     color: @color1;
 }
 
+#hyprland-workspaces button:hover {
+    background-color: @color5;
+    transform: scale(1.1);
+}
+
 #custom-power {
-    padding-left: 4px;
+    padding-left: 8px;
     padding-right: 4px;
-    border-radius: 4px;
+    border-radius: 5px;
     transition: none;
     color: @color1;
     background: @color7;
@@ -74,9 +113,9 @@ window#waybar.hidden {
 
 #pulseaudio {
     margin-right: 4px;
-    padding-left: 4px;
-    padding-right: 4px;
-    border-radius: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 5px;
     transition: none;
     color: @color1;
     background: @color8;
@@ -88,27 +127,27 @@ window#waybar.hidden {
 }
 
 #network {
-    padding-left: 4px;
+    padding-left: 8px;
     padding-right: 4px;
-    border-radius: 4px;
+    border-radius: 5px;
     transition: none;
     color: @color1;
     background: @color10;
 }
 
 #bluetooth {
-    padding-left: 4px;
+    padding-left: 8px;
     padding-right: 4px;
-    border-radius: 4px;
+    border-radius: 5px;
     transition: none;
     color: @color1;
     background: @color11;
 }
 
 #clock {
-    padding-left: 4px;
-    padding-right: 4px;
-    border-radius: 4px 0px 0px 4px;
+    padding-left: 2px;
+    padding-right: 2px;
+    border-radius: 5px 0px 0px 5px;
     transition: none;
     color: @color1;
     background: @color2;
