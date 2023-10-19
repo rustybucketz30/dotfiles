@@ -28,7 +28,7 @@
         "on-click": "foot sh -c 'yay; echo Done - Press enter to exit; read'; pkill -SIGRTMIN+8 waybar",
         "signal": 8,
         "tooltip-position": "right,top",
-        "tooltip": "  {} updates available"
+        "tooltip": false
     },  
     "clock": {
         "timezone": "America/New_York",
@@ -50,30 +50,28 @@
             "default": ["", " ", " "]
         },
         "on-click": "pavucontrol",
-        "tooltip-position": "right"
+        "tooltip": false
     },
     "bluetooth": {
+        "format": "{icon}",
         "format-disabled": "",
         "format-off": "",
         "interval": 30,
         "on-click": "blueman-manager",
-        "tooltip-position": "right"
+        "tooltip": false
     },
     "network": {
         "format": "{ifname}",
         "format-wifi": "",
-        "format-ethernet": "  {ipaddr}",
-        "format-disconnected": "",
-        "tooltip-format": " {ifname} via {gwaddri}",
-        "tooltip-format-wifi": "   {essid} ({signalStrength}%)",
-        "tooltip-format-ethernet": "  {ifname} ({ipaddr}/{cidr})",
-        "tooltip-format-disconnected": "Disconnected",
+        "format-ethernet": "",
+        "format-disconnected": "睊",
+        "onclick": "nm-connection-editor",
         "max-length": 40,
-        "tooltip-position": "right"
-    },
+        "tooltip": false
+    },    
     "custom/power": {
         "format": "",
         "on-click": "wlogout",
-        "tooltip-position": "right"
+        "tooltip": false
     }
 }
