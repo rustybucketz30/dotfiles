@@ -1,9 +1,12 @@
+@import '../../.cache/wal/colors-waybar.css';
+
 * {
     border: none;
     border-radius: 0;
     /* `otf-font-awesome` is required to be installed for icons */
     font-family: Liberation Mono;
     min-height: 20px;
+    background: @background;
 }
 
 window#waybar {
@@ -75,15 +78,6 @@ window#waybar.hidden {
     background: #383c4a;
 }
 
-#custom-mail {
-    margin-right: 8px;
-    padding-right: 16px;
-    border-radius: 0px 10px 10px 0px;
-    transition: none;
-    color: #ffffff;
-    background: #383c4a;
-}
-
 #mode {
     padding-left: 16px;
     padding-right: 16px;
@@ -123,16 +117,6 @@ window#waybar.hidden {
 #pulseaudio.muted {
     background-color: #90b1b1;
     color: #2a5c45;
-}
-
-#custom-mem {
-    margin-right: 8px;
-    padding-left: 16px;
-    padding-right: 16px;
-    border-radius: 10px;
-    transition: none;
-    color: #ffffff;
-    background: #383c4a;
 }
 
 #temperature {

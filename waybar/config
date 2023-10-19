@@ -50,15 +50,6 @@
         "tooltip": false,
     },
 
-    "custom/mail": {
-        "format": "{} ",
-        "exec": "$HOME/.config/waybar/scripts/checkgmail.py",
-        "interval": 120,
-        "on-click": "google-chrome-stable https://mail.google.com/mail/u/0/#inbox ; pkill -SIGRTMIN+9 waybar",
-        "signal": 9,
-        "tooltip": false,
-    },
-
     "sway/mode": {
         "format": "<span style=\"italic\">{}</span>"
     },
@@ -97,13 +88,6 @@
         },
         "on-click": "pavucontrol",
         "min-length": 13,
-    },
-
-    "custom/mem": {
-        "format": "{} ",
-        "interval": 3,
-        "exec": "free -h | awk '/Mem:/{printf $3}'",
-        "tooltip": false,
     },
 
     "temperature": {
