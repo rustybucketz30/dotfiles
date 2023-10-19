@@ -12,17 +12,18 @@
     "include": ["~/dotfiles/waybar/modules.json"],
 
     // Modules for Vertical Layout
-    "modules-left": [
+    "modules-top": [
         "custom/appmenu",
-        "wlr/taskbar",
         "hyprland/workspaces"
     ],
 
     // Modules Center
-    "modules-center": [],
+    "modules-center": [
+        "wlr/taskbar"
+    ],
 
     // Modules Right    
-    "modules-right": [
+    "modules-bottom": [
         "custom/updates",
         "pulseaudio",
         "bluetooth",
