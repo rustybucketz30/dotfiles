@@ -13,7 +13,7 @@
     "~/.config/waybar/modules.json"
   ],
   "modules-top": [
-    "custom/rofi"
+    "pulseaudio"
   ],
   "modules-bottom": [],  "hyprland/workspaces": {
     "on-click": "activate",
