@@ -1,0 +1,20 @@
+{
+  "position": "left",
+  "height": "100%",
+  "width": 50,
+  "margin": {
+    "top": 10,
+    "bottom": 10,
+    "left": 10,
+    "right": 0
+  },
+  "padding": 10,
+  "spacing": 5,
+  "include": [
+    "~/.config/waybar/modules.json"
+  ],
+  "modules-top": [
+    "custom/rofi"
+  ],
+  "modules-bottom": []
+}
