@@ -67,6 +67,7 @@ window#waybar.hidden {
   color: @color7;
   opacity: 0.8;
   padding: 0px;
+  font-size: 20px;
 }
 
 #custom-rofi:hover,
@@ -90,10 +91,8 @@ window#waybar.hidden {
 
 #custom-pacman {
     margin-top: 20px;
-    font-size: 20px;
 }
 
 #custom-power {
     margin-bottom: 20px;
-    font-size: 30px;
 }

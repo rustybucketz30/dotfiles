@@ -5,7 +5,7 @@
     "width": 80,
     "modules-left": ["custom/pacman","custom/rofi","custom/color_toggle"],
     "modules-center": ["hyprland/workspaces"],
-    "modules-right": ["bluetooth","pulseaudio", "network", "clock", "custom/power"],
+    "modules-right": ["bluetooth","pulseaudio", "network", "custom/power", "clock"],
     "spacing": 10,
     "hyprland/workspaces": {
         "active-only":false,
@@ -29,18 +29,16 @@
         "signal": 8,
         "tooltip": false,
     },
-
     "custom/rofi": {
-        "format": "Apps",
+        "format": "",
         "on-click": "~/dotfiles/scripts/applauncher.sh",
         "tooltip": false
     },
     "custom/color_toggle": {
-        "format": "Color",
+        "format": "",
         "exec": "~/dotfiles/scripts/update-colors.sh",
         "on-click": "exec"
     },
-
     "clock": {
         "timezone": "America/New_York",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
@@ -49,17 +47,14 @@
 
     "pulseaudio": {
         "scroll-step": 0.5,
-        "format": "{icon} {volume}%",
-        "format-muted": " {format_source}",
+        "format": "{icon}",
+        "format-muted": "",
         "format-source": "{volume}% ",
         "format-source-muted": "",
         "format-icons": {
             "headphone": "",
             "hands-free": "",
             "headset": "",
-            "phone": "",
-            "portable": "",
-            "car": "",
             "default": ["", " ", " "]
         },
         "on-click": "pavucontrol"
@@ -72,7 +67,7 @@
     },
     "network": {
         "format": "{ifname}",
-        "format-wifi": "   {signalStrength}%",
+        "format-wifi": "",
         "format-ethernet": "  {ipaddr}",
         "format-disconnected": "",
         "tooltip-format": " {ifname} via {gwaddri}",
