@@ -1,8 +1,7 @@
 @import "../../.cache/wal/colors-waybar.css";
 
 * {
-  font-family: "Fira Sans Semibold", FontAwesome, Roboto, Helvetica, Arial,
-    sans-serif;
+  font-family: "Fira Sans Semibold", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
   border: 1px solid @color11;
   border-radius: 20px;
   background-color: rgba(0, 0, 0, 0.8);
@@ -11,9 +10,7 @@
 
 window#waybar {
   background: transparent;
-  transition-property: background-color;
-  transition-duration: 0.5s;
-  transition-timing-function: ease-in-out;
+  transition: background-color 0.5s ease-in-out;
 }
 
 window#waybar.hidden {
@@ -22,9 +19,7 @@ window#waybar.hidden {
 
 #workspaces {
   background: #ffffff;
-  margin: 2px 1px 3px 1px;
   padding: 0px 1px;
-  border-radius: 15px;
   border: 0px;
   font-weight: bold;
   font-style: normal;
@@ -36,7 +31,6 @@ window#waybar.hidden {
 #workspaces button {
   padding: 1px 9px;
   margin: 3px 3px;
-  border-radius: 15px;
   border: 0px;
   color: #ffffff;
   background-color: @color11;
@@ -44,80 +38,37 @@ window#waybar.hidden {
   opacity: 0.4;
 }
 
-#workspaces button.active {
-  color: #ffffff;
-  background: @color11;
-  border-radius: 15px;
-  min-width: 40px;
-  transition: all 0.3s ease-in-out;
-  opacity: 1;
-}
-
+#workspaces button.active,
 #workspaces button:hover {
   color: #ffffff;
   background: @color11;
+  opacity: 1;
+}
+
+#custom-pacman, #custom-rofi, #custom-color_toggle, #custom-power, #clock, #pulseaudio, #network, #bluetooth.on, #bluetooth.connected {
+  background-color: #ffffff;
+  font-size: 16px;
+  color: @background;
   border-radius: 15px;
-  opacity: 0.7;
+  padding: 2px 10px;
+  margin: 3px 10px 3px 0px;
+  opacity: 0.8;
 }
 
-#custom-pacman, #custom-rofi, #custom-color_toggle, #custom-power, #clock {
-    color: @color1;
-    background: @color7;
+#network.ethernet, #network.wifi {
+  background-color: @color11;
+  color: #ffffff;
 }
-
 
 #custom-rofi:hover, #custom-pacman:hover, #custom-color_toggle:hover, #custom-power:hover, #clock:hover {
-    transition: all 0.3s ease-in-out;
-    color: @color7;
-    background: @color2;
-}
-
-
-#pulseaudio {
-    background-color: #FFFFFF;
-    font-size: 16px;
-    color: @background;
-    border-radius: 15px;
-    padding: 2px 10px 0px 10px;
-    margin: 5px 15px 5px 0px;
-    opacity:0.8;
+  transition: all 0.3s ease-in-out;
+  color: @color7;
+  background: @color2;
 }
 
 #pulseaudio.muted {
-    background-color: @color11;
-    color: #FFFFFF;
-}
-
-#network {
-  background-color: #ffffff;
-  font-size: 16px;
-  color: @background;
-  border-radius: 15px;
-  padding: 2px 10px 0px 10px;
-  margin: 3px 10px 3px 0px;
-  opacity: 0.8;
-  border: 3px solid #ffffff;
-}
-
-#network.ethernet {
   background-color: @color11;
   color: #ffffff;
-}
-
-#network.wifi {
-  background-color: @color11;
-  color: #ffffff;
-}
-
-#bluetooth.on,
-#bluetooth.connected {
-  background-color: #ffffff;
-  font-size: 16px;
-  color: @background;
-  border-radius: 15px;
-  padding: 2px 10px 0px 10px;
-  margin: 5px 15px 5px 0px;
-  opacity: 0.8;
 }
 
 #bluetooth.off {

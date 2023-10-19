@@ -5,7 +5,7 @@
     "width": 100,
     "modules-left": ["custom/pacman","custom/rofi","custom/color_toggle"],
     "modules-center": ["hyprland/workspaces"],
-    "modules-right": ["custom/power","pulseaudio", "network", "bluetooth", "clock"],
+    "modules-right": ["bluetooth","pulseaudio", "network", "clock", "custom/power"],
     "spacing": 10,
     "hyprland/workspaces": {
         "active-only":false,
@@ -36,7 +36,7 @@
         "tooltip": false
     },
     "custom/color_toggle": {
-        "format": "",
+        "format": "Color",
         "exec": "~/dotfiles/scripts/update-colors.sh",
         "on-click": "exec"
     },
