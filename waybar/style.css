@@ -47,15 +47,15 @@ window#waybar.hidden {
 }
 
 #workspaces button.active{
-    background-color: @color2;
+    background-color: @color1;
     opacity: 0.9;
-    margin: 4px;
+    margin: 8px;
     border-radius: 5px;
 }
 #workspaces button:hover {
   opacity: 0.8;
-  margin-right: 3px;
-  margin-left: 3px;
+  margin-right: 4px;
+  margin-left: 4px;
 }
 
 #custom-pacman,
@@ -78,7 +78,7 @@ window#waybar.hidden {
 #clock:hover {
   transition: all 0.3s ease-in-out;
   color: @color7;
-  background: @color11;
+  background: @color9;
 }
 
 #pulseaudio.muted {
@@ -100,7 +100,7 @@ window#waybar.hidden {
 }
 
 #network {
-    padding-right: 3px;
+    padding-right: 5px;
 }
 
 #clock {
