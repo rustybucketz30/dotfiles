@@ -1,6 +1,6 @@
 {
     "layer": "top",
-    "position": "bottom",
+    "position": "left",
     "height": 35,
     "spacing": 4,
     "margin-top": 5,
