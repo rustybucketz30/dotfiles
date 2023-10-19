@@ -27,8 +27,8 @@
         "exec-if": "exit 0",
         "on-click": "foot sh -c 'yay; echo Done - Press enter to exit; read'; pkill -SIGRTMIN+8 waybar",
         "signal": 8,
-        "tooltip": false,
-        "tooltip-position": "right,top"
+        "tooltip-position": "right,top",
+        "tooltip": "  {} updates available"
     },  
     "clock": {
         "timezone": "America/New_York",
