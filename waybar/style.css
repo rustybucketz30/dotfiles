@@ -12,7 +12,7 @@ body,
 }
 
 * {
-  border: none !important;
+  border-width: 0 !important;
 }
 
 window#waybar.hidden {
