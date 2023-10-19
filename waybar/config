@@ -34,12 +34,6 @@
         },
       },
 
-    "sway/language": {
-        "format": "{} ",
-	"min-length": 5,
-	"tooltip": false
-    },
-
     "keyboard-state": {
         //"numlock": true,
         "capslock": true,

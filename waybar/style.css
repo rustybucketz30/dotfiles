@@ -6,7 +6,7 @@
     /* `otf-font-awesome` is required to be installed for icons */
     font-family: Liberation Mono;
     min-height: 20px;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.4);
     color: @color11;
 }
 
@@ -24,19 +24,19 @@ window#waybar.hidden {
     margin-right: 8px;
     border-radius: 10px;
     transition: none;
-    background: #383c4a;
+    background: @color4;
 }
 
 #workspaces button {
     transition: none;
-    color: #7c818c;
+    color: @color4;
     background: transparent;
     padding: 5px;
     font-size: 18px;
 }
 
 #workspaces button.persistent {
-    color: #7c818c;
+    color: @color3;
     font-size: 12px;
 }
 
@@ -51,16 +51,7 @@ window#waybar.hidden {
 }
 
 #workspaces button.focused {
-    color: white;
-}
-
-#language {
-    padding-left: 16px;
-    padding-right: 8px;
-    border-radius: 10px 0px 0px 10px;
-    transition: none;
-    color: #ffffff;
-    background: #383c4a;
+    color: @color6;
 }
 
 #keyboard-state {
