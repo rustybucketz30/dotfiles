@@ -2,14 +2,14 @@
 
 * {
   font-family: "Fira Sans Semibold", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
-  border: 3px solid @color11;
-  border-radius: 20px;
   background-color: rgba(0, 0, 0, 0.8);
+  transition: background-color 0.5s ease-in-out;
 }
 
 window#waybar {
   background: transparent;
-  transition: background-color 0.5s ease-in-out;
+  border: 3px solid @color11;
+  border-radius: 20px;
 }
 
 window#waybar.hidden {
