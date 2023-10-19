@@ -96,14 +96,6 @@ window#waybar.hidden {
     background: #383c4a;
 }
 
-#custom-weather {
-    padding-right: 16px;
-    border-radius: 0px 10px 10px 0px;
-    transition: none;
-    color: #ffffff;
-    background: #383c4a;
-}
-
 #pulseaudio {
     margin-right: 8px;
     padding-left: 16px;
@@ -157,4 +149,14 @@ window#waybar.hidden {
         background-color: #ffffff;
         color: #000000;
     }
+}
+
+#hyprland-workspaces button.active {
+    background-color: rgba(0,0,0,0.8);
+    color: @color4;
+}
+
+#hyprland-workspaces button {
+    background-color: rgba(0,0,0,0.8);
+    color: @color11;
 }

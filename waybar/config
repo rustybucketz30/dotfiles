@@ -4,7 +4,7 @@
     "margin": "20 0 20 20",
     "width": 80, // Waybar width
     "modules-left": ["sway/workspaces", "sway/language", "keyboard-state", "custom/pacman", "sway/mode"],
-    "modules-center": ["clock", "custom/weather"],
+    "modules-center": ["clock", "hyprland/workspaces"],
     "modules-right": ["pulseaudio", "backlight", "tray"],
 
 
@@ -21,6 +21,15 @@
             "4": [],
         },
     },
+    "hyprland/workspaces": {
+        "on-click": "activate",
+        "active-only": false,
+        "all-outputs": true,
+        "format": "{}",
+        "persistent_workspaces": {
+          "*": 5
+        }
+      },
 
     "sway/language": {
         "format": "{} ",
