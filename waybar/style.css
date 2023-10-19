@@ -87,12 +87,16 @@ window#waybar.hidden {
 
 #custom-pacman {
     margin-top: 20px;
+    font-size: 16px;
 }
 
 #pulseaudio {
     padding-left: 5px;
 }
 
+#network {
+    padding-right: 3px;
+}
 
 #clock {
     margin-bottom: 20px;
