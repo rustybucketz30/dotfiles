@@ -9,16 +9,16 @@
 }
 
 window#waybar {
-    background: @color11;
+    background: transparent;
     transition-property: background-color;
     transition-duration: .5s;
 }
 
 #custom-rofi, #pulseaudio, #custom-color_toggle, #custom-power, #clock, #network, #bluetooth, #temperature, #custom-clipboard {
-    background-color: @color0;
+    background-color: white
 }
 
 #hyprland-workspaces button.active {
-    background-color: @color4;
-    color: @color0;
+    background-color: black;
+    color: white;
 }
