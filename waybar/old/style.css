@@ -1,0 +1,29 @@
+@import '../../.cache/wal/colors-waybar.css';
+
+* {
+    font-family: "Fira Sans Semibold", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(0,0,0,0.8);
+    color: @color11;
+}
+
+window#waybar {
+    background: transparent;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+#custom-rofi, #pulseaudio, #custom-color_toggle, #custom-power, #clock, #network, #bluetooth, #temperature, #custom-clipboard {
+    background-color: white
+}
+
+#hyprland-workspaces button.active {
+    background-color: rgba(0,0,0,0.8);
+    color: @color4;
+}
+
+#hyprland-workspaces button {
+    background-color: rgba(0,0,0,0.8);
+    color: @color11;
+}

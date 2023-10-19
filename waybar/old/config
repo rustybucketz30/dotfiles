@@ -1,0 +1,40 @@
+{
+  "layer": "top",
+  "position": "left",
+  "height": 1080,
+  "margin": "20 20 20 0",
+  "width": 80,
+  "spacing": 5,
+  "include": ["~/dotfiles/waybar/modules.json"],
+  "modules-top": ["custom/rofi","pulseaudio","custom/color_toggle"],
+  "modules-center": ["hyprland/workspaces"],
+  "modules-bottom": ["custom/power","clock","network","bluetooth","temperature","custom/clipboard"],
+  "custom/rofi": {
+    "format": "",
+    "exec": "rofi -show drun",
+    "on-click": "exec"
+  },
+  "custom/color_toggle": {
+    "format": "",
+    "exec": "~/dotfiles/scripts/update-colors.sh",
+    "on-click": "exec"
+  },
+  "hyprland/workspaces": {
+    "on-click": "activate",
+    "active-only": false,
+    "all-outputs": true,
+    "format": "{}",
+    "persistent_workspaces": {
+      "*": 5
+    }
+  },
+  "custom/power": {
+    "format": "",
+    "on-click": "wlogout"
+  },
+  "custom/clipboard": {
+    "format": "",
+    "exec": "cliphist.sh",
+    "on-click": "exec"
+  }
+}
