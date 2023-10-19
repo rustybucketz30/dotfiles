@@ -2,7 +2,7 @@
     "layer": "top",
     "position": "left",
     "margin": "10 10 10 10",
-    "width": 80,
+    "width": 40,
     "modules-left": ["custom/pacman"],
     "modules-center": ["hyprland/workspaces"],
     "modules-right": ["bluetooth","pulseaudio", "network", "custom/power", "clock"],
@@ -37,7 +37,7 @@
 
     "pulseaudio": {
         "scroll-step": 0.5,
-        "format": "{icon}",
+        "format":"{icon}",
         "format-muted": "",
         "format-source": "{volume}% ",
         "format-source-muted": "",

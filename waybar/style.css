@@ -89,7 +89,12 @@ window#waybar.hidden {
     margin-top: 20px;
 }
 
+#pulseaudio {
+    padding-left: 5px;
+}
+
+
 #clock {
     margin-bottom: 20px;
-    font-size: 16px;
+    font-size: 12px;
 }
