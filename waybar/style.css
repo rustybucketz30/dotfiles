@@ -40,7 +40,7 @@ window#waybar.hidden {
 }
 
 #workspaces button {
-  color: white;
+  color: @color7;
   background: transparent;
   transition: all 0.3s ease-in-out;
   opacity: 0.4;
@@ -49,6 +49,8 @@ window#waybar.hidden {
 #workspaces button.active{
     background-color: @background;
     opacity: 0.9;
+    margin: 4px;
+    border-radius: 5px;
 }
 #workspaces button:hover {
   opacity: 0.8;
