@@ -6,7 +6,7 @@
     /* `otf-font-awesome` is required to be installed for icons */
     font-family: Liberation Mono;
     min-height: 20px;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0,0,0,0.6);
     color: @color11;
 }
 
@@ -27,33 +27,6 @@ window#waybar.hidden {
     background: @color4;
 }
 
-#workspaces button {
-    transition: none;
-    color: @color4;
-    background: transparent;
-    padding: 5px;
-    font-size: 18px;
-}
-
-#workspaces button.persistent {
-    color: @color3;
-    font-size: 12px;
-}
-
-/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
-#workspaces button:hover {
-    transition: none;
-    box-shadow: inherit;
-    text-shadow: inherit;
-    border-radius: inherit;
-    color: #383c4a;
-    background: #7c818c;
-}
-
-#workspaces button.focused {
-    color: @color6;
-}
-
 #keyboard-state {
     margin-right: 8px;
     padding-right: 16px;
@@ -69,7 +42,7 @@ window#waybar.hidden {
     border-radius: 10px 0px 0px 10px;
     transition: none;
     color: #ffffff;
-    background: #383c4a;
+    background: @color11;
 }
 
 #mode {
@@ -82,8 +55,8 @@ window#waybar.hidden {
 }
 
 #clock {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 4px;
+    padding-right: 4px;
     border-radius: 10px 0px 0px 10px;
     transition: none;
     color: #ffffff;
@@ -105,30 +78,6 @@ window#waybar.hidden {
     color: #2a5c45;
 }
 
-#temperature {
-    margin-right: 8px;
-    padding-left: 16px;
-    padding-right: 16px;
-    border-radius: 10px;
-    transition: none;
-    color: #ffffff;
-    background: #383c4a;
-}
-
-#temperature.critical {
-    background-color: #eb4d4b;
-}
-
-#backlight {
-    margin-right: 8px;
-    padding-left: 16px;
-    padding-right: 16px;
-    border-radius: 10px;
-    transition: none;
-    color: #ffffff;
-    background: #383c4a;
-}
-
 #tray {
     padding-left: 16px;
     padding-right: 16px;
@@ -136,13 +85,6 @@ window#waybar.hidden {
     transition: none;
     color: #ffffff;
     background: #383c4a;
-}
-
-@keyframes blink {
-    to {
-        background-color: #ffffff;
-        color: #000000;
-    }
 }
 
 #hyprland-workspaces button.active {

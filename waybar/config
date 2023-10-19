@@ -1,26 +1,12 @@
 {
     // "layer": "top", // Waybar at top layer
     "position": "left", // Waybar position (top|bottom|left|right)
-    "margin": "20 0 20 20",
+    "margin": "10 0 10 10",
     "width": 80, // Waybar width
     "modules-left": ["custom/pacman","custom/rofi","pulseaudio","custom/color_toggle"],
     "modules-center": ["clock", "hyprland/workspaces"],
     "modules-right": ["pulseaudio", "backlight", "tray"],
 
-
-    //***************************
-    //*  Modules configuration  *
-    //***************************
-
-    "sway/workspaces": {
-        "disable-scroll": true,
-        "persistent_workspaces": {
-            "1": [],
-            "2": [],
-            "3": [],
-            "4": [],
-        },
-    },
     "hyprland/workspaces": {
         "on-click": "activate",
         "active-only": false,
@@ -100,23 +86,6 @@
         },
         "on-click": "pavucontrol",
         "min-length": 13,
-    },
-
-    "temperature": {
-        // "thermal-zone": 2,
-        // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
-        "critical-threshold": 80,
-        // "format-critical": "{temperatureC}°C {icon}",
-        "format": "{temperatureC}°C {icon}",
-        "format-icons": ["", "", "", "", ""],
-        "tooltip": false,
-    },
-
-    "backlight": {
-        "device": "intel_backlight",
-        "format": "{percent}% {icon}",
-        "format-icons": ["","","","", "", "", ""],
-        "min-length": 7,
     },
 
     "tray": {
