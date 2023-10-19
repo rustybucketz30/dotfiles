@@ -62,17 +62,11 @@ window#waybar.hidden {
 #network,
 #bluetooth.on,
 #bluetooth.connected {
-  background-color: @background;
+  background-color: @tansparent;
   font-size: 16px;
-  color: @background;
+  color: @color7;
   opacity: 0.8;
   padding: 0px;
-}
-
-#network.ethernet,
-#network.wifi {
-  background-color: @color11;
-  color: @color6;
 }
 
 #custom-rofi:hover,
@@ -81,8 +75,8 @@ window#waybar.hidden {
 #custom-power:hover,
 #clock:hover {
   transition: all 0.3s ease-in-out;
-  color: @color7;
-  background: @color2;
+  color: @background;
+  background: @color11;
 }
 
 #pulseaudio.muted {
