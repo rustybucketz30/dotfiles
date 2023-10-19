@@ -4,18 +4,20 @@
   font-family: "Fira Sans Semibold", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
   background-color: rgba(0, 0, 0, 0.8);
   transition: background-color 0.5s ease-in-out;
+  border: 3px solid @color11;
+  border-radius: 20px;
 }
 
 window#waybar {
   background: transparent;
   transition-property: background-color;
   transition-duration: 0.5s;
-  border: 3px solid @color11;
-  border-radius: 20px;
+  border: 0px;
 }
 
 window#waybar.hidden {
   opacity: 0.2;
+  border: 0px;
 }
 
 #workspaces {
@@ -26,6 +28,7 @@ window#waybar.hidden {
   opacity: 0.8;
   font-size: 16px;
   color: #ffffff;
+  border: 0px;
 }
 
 #workspaces button {
@@ -34,6 +37,7 @@ window#waybar.hidden {
   background-color: @background;
   transition: all 0.3s ease-in-out;
   opacity: 0.4;
+  border: 0px;
 }
 
 #workspaces button.active,
@@ -42,6 +46,7 @@ window#waybar.hidden {
   color: @color7;
   background: @color11;
   opacity: 1;
+  border: 0px;
 }
 
 #custom-pacman, #custom-rofi, #custom-color_toggle, #custom-power, #clock, #pulseaudio, #network, #bluetooth.on, #bluetooth.connected {
@@ -50,11 +55,13 @@ window#waybar.hidden {
   color: @background;
   opacity: 0.8;
   padding: 0px;
+  border: 0px;
 }
 
 #network.ethernet, #network.wifi {
   background-color: @color11;
   color: @color6;
+  border: 0px;
 }
 
 #custom-rofi:hover, #custom-pacman:hover, #custom-color_toggle:hover, #custom-power:hover, #clock:hover {
@@ -63,13 +70,16 @@ window#waybar.hidden {
   background: @color2;
   padding: 0px;
   margin: 0px;
+  border: 0px;
 }
 
 #pulseaudio.muted {
   background-color: @color11;
   color: @color1;
+  border: 0px;
 }
 
 #bluetooth.off {
   background-color: @color5;
+  border: 0px;
 }
