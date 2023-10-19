@@ -41,16 +41,17 @@ window#waybar.hidden {
 
 #workspaces button {
   color: white;
-  background-color: @background;
+  background: transparent;
   transition: all 0.3s ease-in-out;
   opacity: 0.4;
 }
 
-#workspaces button.active,
+#workspaces button.active{
+    background-color: @background;
+    opacity: 0.9;
+}
 #workspaces button:hover {
-  color: @color7;
-  background: @color11;
-  opacity: 1;
+  opacity: 0.8;
 }
 
 #custom-pacman,
