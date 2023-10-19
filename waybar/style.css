@@ -46,17 +46,21 @@ window#waybar.hidden {
   font-size: 16px;
   color: @background;
   opacity: 0.8;
+  padding: 0px;
+  margin: 5px 2px 5px 2px;
 }
 
 #network.ethernet, #network.wifi {
   background-color: @color11;
-  color: @color1;
+  color: @color6;
 }
 
 #custom-rofi:hover, #custom-pacman:hover, #custom-color_toggle:hover, #custom-power:hover, #clock:hover {
   transition: all 0.3s ease-in-out;
   color: @color7;
   background: @color2;
+  padding: 0px;
+  margin: 0px;
 }
 
 #pulseaudio.muted {
@@ -65,5 +69,5 @@ window#waybar.hidden {
 }
 
 #bluetooth.off {
-  background-color: transparent;
+  background-color: @color5;
 }

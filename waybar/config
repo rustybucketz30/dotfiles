@@ -2,7 +2,7 @@
     "layer": "top",
     "position": "left",
     "margin": "10 10 10 10",
-    "width": 100,
+    "width": 80,
     "modules-left": ["custom/pacman","custom/rofi","custom/color_toggle"],
     "modules-center": ["hyprland/workspaces"],
     "modules-right": ["bluetooth","pulseaudio", "network", "clock", "custom/power"],
