@@ -14,31 +14,35 @@
     "~/.config/waybar/modules.json"
   ],
   "modules-top": [
-    "custom/rofi",
-    "pulseaudio",
-    "custom/color_toggle"
-  ],
-  "modules-center": [
-    "hyprland/workspaces"
-  ],
-  "modules-bottom": [
-    "custom/power",
-    "clock",
-    "network",
-    "bluetooth",
-    "temperature",
-    "custom/clipboard"
-  ],
-  "custom/rofi": {
-    "format": "",
-    "exec": "rofi -show drun",
-    "on-click": "exec"
-  },
-  "custom/color_toggle": {
-    "format": "",
-    "exec": "~/dotfiles/scripts/update-colors.sh",
-    "on-click": "exec"
-  },
+    "custom/rofi"
+],
+"modules-bottom": [],
+//   "modules-top": [
+//     "custom/rofi",
+//     "pulseaudio",
+//     "custom/color_toggle"
+//   ],
+//   "modules-center": [
+//     "hyprland/workspaces"
+//   ],
+//   "modules-bottom": [
+//     "custom/power",
+//     "clock",
+//     "network",
+//     "bluetooth",
+//     "temperature",
+//     "custom/clipboard"
+//   ],
+//   "custom/rofi": {
+//     "format": "",
+//     "exec": "rofi -show drun",
+//     "on-click": "exec"
+//   },
+//   "custom/color_toggle": {
+//     "format": "",
+//     "exec": "~/dotfiles/scripts/update-colors.sh",
+//     "on-click": "exec"
+//   },
   "hyprland/workspaces": {
     "on-click": "activate",
     "active-only": false,
@@ -47,14 +51,14 @@
     "persistent_workspaces": {
       "*": 5
     }
-  },
-  "custom/power": {
-    "format": "",
-    "on-click": "wlogout"
-  },
-  "custom/clipboard": {
-    "format": "",
-    "exec": "cliphist.sh",
-    "on-click": "exec"
   }
+//   "custom/power": {
+//     "format": "",
+//     "on-click": "wlogout"
+//   },
+//   "custom/clipboard": {
+//     "format": "",
+//     "exec": "cliphist.sh",
+//     "on-click": "exec"
+//   }
 }
