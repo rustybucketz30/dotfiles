@@ -47,13 +47,15 @@ window#waybar.hidden {
 }
 
 #workspaces button.active{
-    background-color: @background;
+    background-color: @color2;
     opacity: 0.9;
     margin: 4px;
     border-radius: 5px;
 }
 #workspaces button:hover {
   opacity: 0.8;
+  margin-right: 3px;
+  margin-left: 3px;
 }
 
 #custom-pacman,
