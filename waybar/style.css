@@ -2,10 +2,9 @@
 
 * {
   font-family: "Fira Sans Semibold", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
-  border: 1px solid @color11;
+  border: 2px solid @color11;
   border-radius: 20px;
   background-color: rgba(0, 0, 0, 0.8);
-  margin: 2px 1px 3px 1px;
 }
 
 window#waybar {
@@ -28,8 +27,6 @@ window#waybar.hidden {
 }
 
 #workspaces button {
-  padding: 1px 9px;
-  margin: 3px 3px;
   border: 0px;
   color: #ffffff;
   background-color: @color11;
@@ -69,6 +66,4 @@ window#waybar.hidden {
 
 #bluetooth.off {
   background-color: transparent;
-  padding: 0px;
-  margin: 0px;
 }
