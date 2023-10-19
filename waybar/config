@@ -1,44 +1,65 @@
 {
-    // General Settings
-
-    // Position LEFT
     "position": "left",
-    "layer": "top",
-    "height": 1080,
-    "width": 15,   
-    "spacing": 4,
-
-    // Load Modules
-    "include": ["~/dotfiles/waybar/modules.json"],
-
-    // Modules for Vertical Layout
+    "height": "100%",
+    "width": 50,
+    "margin": {
+        "top": 10,
+        "bottom": 10,
+        "left": 10,
+        "right": 0
+    },
+    "spacing": 5,
+    "include": ["~/.config/waybar/modules.json"],
     "modules-top": [
-        "custom/appmenu",
+        "custom/rofi",
+        "pulseaudio",
+        "custom/color_toggle"
+    ],
+    "modules-center": [
         "hyprland/workspaces"
     ],
-
-    // Modules Center
-    "modules-center": [
-        "wlr/taskbar"
-    ],
-
-    // Modules Right    
     "modules-bottom": [
-        "custom/updates",
-        "pulseaudio",
-        "bluetooth",
-        "battery", 
-        "custom/cliphist",
-        "network",
+        "custom/power",
         "clock",
-        "custom/exit"
+        "network",
+        "bluetooth",
+        "temperature",
+        "custom/clipboard"
     ],
-
-    // Group Quicklinks
-    "group/quicklinks": {
-        "orientation": "vertical",
-        "modules": [
-            "custom/filemanager",
-         ]
+    "custom/rofi": {
+        "format": "",
+        "exec": "rofi -show drun",
+        "on-click": "exec"
+    },
+    "custom/color_toggle": {
+        "format": "",
+        "exec": "~/dotfiles/scripts/update-colors.sh",
+        "on-click": "exec"
+    },
+    "hyprland/workspaces": {
+        "on-click": "activate",
+        "active-only": false,
+        "all-outputs": true,
+        "format": "{}",
+        "persistent_workspaces": {
+            "*": 5
+        }
+    },
+    "custom/power": {
+        "format": "",
+        "on-click": "wlogout"
+    },
+    "custom/clipboard": {
+        "format": "",
+        "exec": "cliphist.sh",
+        "on-click": "exec"
     }
 }
+
+// okay, I'd like to start from scratch with my waybar setup. Can you generate a very basic set of styles.css, config, and launch.sh to make a veritcal taskbar along the left side of the screen? The only ting to keep is the importing colors and to use dynamic coloring when possible, but otherwise let's refactor it. The specifciations I'd like: 
+
+// Top: a clickable menu that opens rofi which is the application launcher. Below that the volume module which should be positioned vertically, then below that a Color module which toggles between color and grayscale.
+
+// Middle (center aligned): a vertically stacked list of workspaces from 1-5 with the curent workspace highlighted.
+
+// Bottom: Starting from the bottom, I want the power module, then the clock module, then wifi, then bluetooth, then the temperature, then the clipboard.
