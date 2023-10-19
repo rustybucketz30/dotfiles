@@ -9,6 +9,9 @@ body,
   transition: background-color 0.5s ease-in-out;
   border: 3px solid @color11;
   border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #workspaces,
@@ -24,6 +27,8 @@ body,
 #network.ethernet,
 #network.wifi {
   border-width: 0;
+  display: flex;
+  align-items: center;
 }
 
 window#waybar.hidden {
@@ -54,8 +59,6 @@ window#waybar.hidden {
 }
 
 #custom-pacman,
-#custom-rofi,
-#custom-color_toggle,
 #custom-power,
 #clock,
 #pulseaudio,
@@ -70,9 +73,7 @@ window#waybar.hidden {
   font-size: 20px;
 }
 
-#custom-rofi:hover,
 #custom-pacman:hover,
-#custom-color_toggle:hover,
 #custom-power:hover,
 #clock:hover {
   transition: all 0.3s ease-in-out;

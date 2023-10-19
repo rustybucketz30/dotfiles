@@ -3,7 +3,7 @@
     "position": "left",
     "margin": "10 10 10 10",
     "width": 80,
-    "modules-left": ["custom/pacman","custom/rofi","custom/color_toggle"],
+    "modules-left": ["custom/pacman"],
     "modules-center": ["hyprland/workspaces"],
     "modules-right": ["bluetooth","pulseaudio", "network", "custom/power", "clock"],
     "spacing": 10,
@@ -28,17 +28,7 @@
         "on-click": "foot sh -c 'yay; echo Done - Press enter to exit; read'; pkill -SIGRTMIN+8 waybar",
         "signal": 8,
         "tooltip": false,
-    },
-    "custom/rofi": {
-        "format": "",
-        "on-click": "~/dotfiles/scripts/applauncher.sh",
-        "tooltip": false
-    },
-    "custom/color_toggle": {
-        "format": "",
-        "exec": "~/dotfiles/scripts/update-colors.sh",
-        "on-click": "exec"
-    },    
+    },  
     "clock": {
         "timezone": "America/New_York",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
