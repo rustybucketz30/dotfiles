@@ -12,9 +12,9 @@
     "spacing": 5,
     "include": ["~/.config/waybar/modules.json"],
     "modules-top": [
-        "custom/rofi",
-        "pulseaudio",
-        "custom/color_toggle"
+        // "custom/rofi",
+        "pulseaudio"
+        // "custom/color_toggle"
     ],
     "modules-center": [
         "hyprland/workspaces"
@@ -27,16 +27,16 @@
         "temperature",
         "custom/clipboard"
     ],
-    "custom/rofi": {
-        "format": "",
-        "exec": "rofi -show drun",
-        "on-click": "exec"
-    },
-    "custom/color_toggle": {
-        "format": "",
-        "exec": "~/dotfiles/scripts/update-colors.sh",
-        "on-click": "exec"
-    },
+    // "custom/rofi": {
+    //     "format": "",
+    //     "exec": "rofi -show drun",
+    //     "on-click": "exec"
+    // },
+    // "custom/color_toggle": {
+    //     "format": "",
+    //     "exec": "~/dotfiles/scripts/update-colors.sh",
+    //     "on-click": "exec"
+    // },
     "hyprland/workspaces": {
         "on-click": "activate",
         "active-only": false,
