@@ -14,16 +14,6 @@ window#waybar {
     transition-duration: .5s;
 }
 
-.modules-top {
-    background-color: rgba(0,0,0,0.8);
-    color: @color11;
-}
-
-.modules-bottom {
-    background-color: rgba(0,0,0,0.8);
-    color: @color11;
-}
-
 #custom-rofi, #pulseaudio, #custom-color_toggle, #custom-power, #clock, #network, #bluetooth, #temperature, #custom-clipboard {
     background-color: white
 }
