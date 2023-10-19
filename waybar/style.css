@@ -31,7 +31,7 @@ window#waybar.hidden {
 }
 
 #workspaces {
-  background: #ffffff;
+  background: transparent;
   font-weight: bold;
   font-style: normal;
   opacity: 0.8;
@@ -94,7 +94,7 @@ window#waybar.hidden {
 }
 
 #pulseaudio {
-    padding-left: 7px;
+    padding-left: 9px;
 }
 
 #network {
@@ -104,4 +104,8 @@ window#waybar.hidden {
 #clock {
     margin-bottom: 20px;
     font-size: 14px;
+}
+
+#custom-power {
+    padding-right: 1px;
 }
