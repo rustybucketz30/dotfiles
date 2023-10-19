@@ -20,5 +20,10 @@ window#waybar {
 
 #hyprland-workspaces button.active {
     background-color: rgba(0,0,0,0.8);
-    color: white;
+    color: @color4;
+}
+
+#hyprland-workspaces button {
+    background-color: rgba(0,0,0,0.8);
+    color: @color11;
 }
