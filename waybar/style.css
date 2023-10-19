@@ -92,7 +92,7 @@ window#waybar.hidden {
 }
 
 #pulseaudio {
-    padding-left: 5px;
+    padding-left: 7px;
 }
 
 #network {
@@ -101,5 +101,5 @@ window#waybar.hidden {
 
 #clock {
     margin-bottom: 20px;
-    font-size: 12px;
+    font-size: 14px;
 }
