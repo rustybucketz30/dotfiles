@@ -62,7 +62,7 @@ window#waybar.hidden {
 #network,
 #bluetooth.on,
 #bluetooth.connected {
-  background-color: white;
+  background-color: @background;
   font-size: 16px;
   color: @background;
   opacity: 0.8;
@@ -92,4 +92,12 @@ window#waybar.hidden {
 
 #bluetooth.off {
   background-color: @color5;
+}
+
+#custom-pacman {
+    margin-top: 20px;
+}
+
+#custom-power {
+    margin-bottom: 20px;
 }
