@@ -1,38 +1,25 @@
 {
     // General Settings
 
-    // Position TOP
+    // Position LEFT
+    "position": "left",
     "layer": "top",
-    "margin-top": 14,
-    "margin-bottom": 0,
-
-    // Position BOTTOM
-    // "position": "bottom",
-    // "margin-top": 0,
-    // "margin-bottom": 14,
-    
-    "layer": "top",
-    "height": 16,
-    "margin-left": 0,
-    "margin-right": 0,    
+    "height": 1080, // Adjust to your screen height
+    "width": 40,    // Adjust as per your preference
     "spacing": 0,
 
     // Load Modules
     "include": ["~/dotfiles/waybar/modules.json"],
 
-    // Modules Left
+    // Modules for Vertical Layout
     "modules-left": [
         "custom/appmenu",
-        "custom/dotfiles/wallpapers",
         "wlr/taskbar",
-        "group/quicklinks",
-        "hyprland/window"
+        "hyprland/workspaces"
     ],
 
     // Modules Center
-    "modules-center": [
-        "hyprland/workspaces"
-    ],
+    "modules-center": [],
 
     // Modules Right    
     "modules-right": [
