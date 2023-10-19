@@ -95,11 +95,11 @@ window#waybar.hidden {
 }
 
 #pulseaudio {
-    padding-left: 12px;
+    padding-left: 11px;
 }
 
 #network {
-    padding-right: 6px;
+    padding-right: 7px;
 }
 
 #clock {
@@ -108,5 +108,5 @@ window#waybar.hidden {
 }
 
 #custom-power {
-    padding-right: 1px;
+    padding-right: 2px;
 }
