@@ -1,7 +1,7 @@
 {
     "layer": "top",
     "position": "left",
-    "margin": "10 10 10 10",
+    "margin": "10 10 10 0",
     "width": 70,
     "modules-left": ["custom/pacman"],
     "modules-center": ["hyprland/workspaces"],
