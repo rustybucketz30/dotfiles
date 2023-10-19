@@ -4,9 +4,9 @@
     // Position LEFT
     "position": "left",
     "layer": "top",
-    "height": 1080, // Adjust to your screen height
-    "width": 40,    // Adjust as per your preference
-    "spacing": 0,
+    "height": 1080,
+    "width": 15,   
+    "spacing": 4,
 
     // Load Modules
     "include": ["~/dotfiles/waybar/modules.json"],
@@ -27,28 +27,17 @@
         "pulseaudio",
         "bluetooth",
         "battery", 
-        "group/hardware",
         "custom/cliphist",
         "network",
-        "custom/exit",
         "clock"
+        "custom/exit",
     ],
 
     // Group Quicklinks
     "group/quicklinks": {
-        "orientation": "horizontal",
+        "orientation": "vertical",
         "modules": [
             "custom/filemanager",
          ]
-    },
-
-    // Group Hardware
-    "group/hardware": {
-        "orientation": "horizontal",
-        "modules": [
-            "disk",
-            "cpu",
-            "memory"
-        ]
     }
 }
