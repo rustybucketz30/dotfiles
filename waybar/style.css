@@ -17,7 +17,7 @@
 
 window#waybar {
     background-color: rgba(0,0,0,0.8);
-    border-right: 0px solid #ffffff;
+    border-bottom: 0px solid #ffffff;
     /* color: #FFFFFF; */
     background: transparent;
     transition-property: background-color;
@@ -130,12 +130,12 @@ window#waybar.empty #window {
  * Modules
  * ----------------------------------------------------- */
 
-.modules-left > widget:first-child > #workspaces {
-    margin-left: 0;
+.modules-top > widget:first-child > #workspaces {
+    margin-top: 0;
 }
 
-.modules-right > widget:last-child > #workspaces {
-    margin-right: 0;
+.modules-bottom > widget:last-child > #workspaces {
+    margin-bottom: 0;
 }
 
 /* -----------------------------------------------------
@@ -143,7 +143,7 @@ window#waybar.empty #window {
  * ----------------------------------------------------- */
 
 #custom-filemanager, #custom-chatgpt, #custom-cliphist, #custom-wallpaper {
-    margin-right:20px;
+    margin-bottom:20px;
     font-size:20px;
     font-weight:bold;
     opacity:0.8;
@@ -151,7 +151,7 @@ window#waybar.empty #window {
 }
 
 #custom-wallpaper {
-    margin-right:23px;
+    margin-bottom:23px;
 }
 
 /* -----------------------------------------------------
@@ -234,7 +234,7 @@ window#waybar.empty #window {
 }
 
 #memory {
-    margin-right:10px;
+    margin-bottom:10px;
 }
 
 /* -----------------------------------------------------
