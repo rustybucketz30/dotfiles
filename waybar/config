@@ -2,10 +2,11 @@
     "layer": "top",
     "position": "left",
     "margin": "10 0 10 10",
-    "width": 80,
-    "modules-left": ["custom/pacman","custom/rofi","custom/color_toggle", "custom/clipboard"],
+    "width": 100,
+    "modules-left": ["custom/pacman","custom/rofi","custom/color_toggle"],
     "modules-center": ["hyprland/workspaces"],
-    "modules-right": ["custom/power","pulseaudio", "backlight", "tray", "network", "bluetooth", "clock"],
+    "modules-right": ["custom/power","pulseaudio", "network", "bluetooth", "clock"],
+
     "hyprland/workspaces": {
         "on-click": "activate",
         "active-only": false,
@@ -21,10 +22,10 @@
 
     "custom/pacman": {
         "format": "{} ",
-        "interval": 3600,                     			// every hour
-        "exec": "(checkupdates;pacman -Qm | aur vercmp) | wc -l",	// # of updates
-        "exec-if": "exit 0",                  			// always run; consider advanced run conditions
-        "on-click": "foot sh -c 'yay; echo Done - Press enter to exit; read'; pkill -SIGRTMIN+8 waybar", // update system
+        "interval": 3600,
+        "exec": "(checkupdates;pacman -Qm | aur vercmp) | wc -l",
+        "exec-if": "exit 0",
+        "on-click": "foot sh -c 'yay; echo Done - Press enter to exit; read'; pkill -SIGRTMIN+8 waybar",
         "signal": 8,
         "tooltip": false,
     },
@@ -41,23 +42,13 @@
     },
 
     "clock": {
-        // "timezone": "America/New_York",
+        "timezone": "America/New_York",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        //"format": "{:%a, %d %b, %I:%M %p}"
         "format": "{:%I:%M %p}"
     },
 
-    "custom/weather": {
-        "format": "{}",
-        "tooltip": true,
-        "interval": 1800,
-        "exec": "$HOME/.config/waybar/scripts/wttr.py",
-        "return-type": "json"
-    },
-
-    // Pulseaudio
     "pulseaudio": {
-        // "scroll-step": 1, // %, can be a float
+        "scroll-step": 0.5,
         "format": "{icon} {volume}%",
         "format-muted": " {format_source}",
         "format-source": "{volume}% ",
@@ -73,23 +64,17 @@
         },
         "on-click": "pavucontrol"
     },
-    // Bluetooth
     "bluetooth": {
         "format-disabled": "",
         "format-off": "",
         "interval": 30,
         "on-click": "blueman-manager"
     },
-
-    "tray": {
-        "icon-size": 16,
-        "spacing": 0
-    },
     "network": {
         "format": "{ifname}",
         "format-wifi": "   {signalStrength}%",
         "format-ethernet": "  {ipaddr}",
-        "format-disconnected": "", //An empty format will hide the module.
+        "format-disconnected": "",
         "tooltip-format": " {ifname} via {gwaddri}",
         "tooltip-format-wifi": "   {essid} ({signalStrength}%)",
         "tooltip-format-ethernet": "  {ifname} ({ipaddr}/{cidr})",
@@ -99,10 +84,5 @@
     "custom/power": {
         "format": "",
         "on-click": "wlogout"
-    },
-    "custom/clipboard": {
-        "format": "",
-        "exec": "cliphist.sh",
-        "on-click": "exec"
     }
 }

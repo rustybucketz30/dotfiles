@@ -2,10 +2,9 @@
 
 * {
     border: none;
-    border-radius: 0;
-    /* `otf-font-awesome` is required to be installed for icons */
-    font-family: Liberation Mono;
-    min-height: 20px;
+    border-radius: 5px;
+    border-color: @color11;
+    font-family: "Fira Sans Semibold", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
     background-color: rgba(0,0,0,0.6);
     color: @color11;
 }
@@ -24,16 +23,7 @@ window#waybar.hidden {
     margin-right: 8px;
     border-radius: 10px;
     transition: none;
-    background: @color4;
-}
-
-#keyboard-state {
-    margin-right: 8px;
-    padding-right: 16px;
-    border-radius: 0px 10px 10px 0px;
-    transition: none;
-    color: #ffffff;
-    background: #383c4a;
+    background: @color1;
 }
 
 #custom-pacman {
@@ -41,26 +31,18 @@ window#waybar.hidden {
     padding-right: 8px;
     border-radius: 10px 0px 0px 10px;
     transition: none;
-    color: #ffffff;
+    color: @color1;
     background: @color11;
 }
 
-#mode {
-    padding-left: 16px;
-    padding-right: 16px;
-    border-radius: 10px;
-    transition: none;
-    color: #ffffff;
-    background: #383c4a;
-}
 
 #clock {
     padding-left: 4px;
     padding-right: 4px;
     border-radius: 10px 0px 0px 10px;
     transition: none;
-    color: #ffffff;
-    background: #383c4a;
+    color: @color1;
+    background: @color11;
 }
 
 #pulseaudio {
@@ -69,22 +51,13 @@ window#waybar.hidden {
     padding-right: 16px;
     border-radius: 10px;
     transition: none;
-    color: #ffffff;
-    background: #383c4a;
+    color: @color1;
+    background: @color11;
 }
 
 #pulseaudio.muted {
-    background-color: #90b1b1;
-    color: #2a5c45;
-}
-
-#tray {
-    padding-left: 16px;
-    padding-right: 16px;
-    border-radius: 10px;
-    transition: none;
-    color: #ffffff;
-    background: #383c4a;
+    background-color: @color2;
+    color: @color1;
 }
 
 #hyprland-workspaces button.active {
