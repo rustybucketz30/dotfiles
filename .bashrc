@@ -10,7 +10,6 @@ alias nf='neofetch'
 alias pf='pfetch'
 alias ls='exa -al'
 alias shutdown='systemctl poweroff'
-alias ts='~/dotfiles/scripts/snapshot.sh'
 alias matrix='cmatrix'
 alias wifi='nmtui'
 alias rw='~/dotfiles/waybar/reload.sh'
@@ -33,10 +32,7 @@ alias gc="git commit -m"
 alias gp="git push"
 alias gpl="git pull"
 
-
 # SCRIPTS
-alias wallp='~/dotfiles/scripts/updatewal.sh'
-alias gr='python ~/dotfiles/scripts/growthrate.py'
 alias chat='python ~/mychatgpt/mychatgpt.py'
 alias confb='nvim ~/dotfiles/.bashrc'
 
