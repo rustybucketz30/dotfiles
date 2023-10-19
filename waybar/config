@@ -8,6 +8,7 @@
         "left": 10,
         "right": 0
     },
+    "padding": 10,
     "spacing": 5,
     "include": ["~/.config/waybar/modules.json"],
     "modules-top": [
