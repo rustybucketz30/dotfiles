@@ -28,11 +28,13 @@
         "on-click": "foot sh -c 'yay; echo Done - Press enter to exit; read'; pkill -SIGRTMIN+8 waybar",
         "signal": 8,
         "tooltip": false,
+        "tooltip-position": "right,top"
     },  
     "clock": {
         "timezone": "America/New_York",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format": "{:%I:%M %p}"
+        "format": "{:%I:%M %p}",
+        "tooltip-position": "right,top"
     },
 
     "pulseaudio": {
@@ -47,13 +49,15 @@
             "headset": "",
             "default": ["", " ", " "]
         },
-        "on-click": "pavucontrol"
+        "on-click": "pavucontrol",
+        "tooltip-position": "right,top"
     },
     "bluetooth": {
         "format-disabled": "",
         "format-off": "",
         "interval": 30,
-        "on-click": "blueman-manager"
+        "on-click": "blueman-manager",
+        "tooltip-position": "right,top"
     },
     "network": {
         "format": "{ifname}",
@@ -64,10 +68,12 @@
         "tooltip-format-wifi": "   {essid} ({signalStrength}%)",
         "tooltip-format-ethernet": "  {ifname} ({ipaddr}/{cidr})",
         "tooltip-format-disconnected": "Disconnected",
-        "max-length": 40
+        "max-length": 40,
+        "tooltip-position": "right,top"
     },
     "custom/power": {
         "format": "",
-        "on-click": "wlogout"
+        "on-click": "wlogout",
+        "tooltip-position": "right,top"
     }
 }
