@@ -156,5 +156,5 @@ window#waybar.hidden {
 }
 
 #custom-rofi, #pulseaudio, #custom-color_toggle, #custom-power, #clock, #network, #bluetooth, #temperature, #custom-clipboard {
-    background-color: white
+    background-color: @color3;
 }
