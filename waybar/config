@@ -29,8 +29,8 @@
         "battery", 
         "custom/cliphist",
         "network",
-        "clock"
-        "custom/exit",
+        "clock",
+        "custom/exit"
     ],
 
     // Group Quicklinks
