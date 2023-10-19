@@ -4,12 +4,12 @@
     font-family: "Fira Sans Semibold", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
     border: none;
     border-radius: 5px;
-    background-color: rgba(@background, 0.8);
+    background-color: rgba(@color11, 0.8);
     color: @foreground;
 }
 
 window#waybar {
-    background: @background;
+    background: @color11;
     transition-property: background-color;
     transition-duration: .5s;
 }
