@@ -34,7 +34,7 @@
         "timezone": "America/New_York",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format": "{:%I:%M %p}",
-        "tooltip-position": "right,top"
+        "tooltip-position": "right"
     },
 
     "pulseaudio": {
@@ -50,14 +50,14 @@
             "default": ["", " ", " "]
         },
         "on-click": "pavucontrol",
-        "tooltip-position": "right,top"
+        "tooltip-position": "right"
     },
     "bluetooth": {
         "format-disabled": "",
         "format-off": "",
         "interval": 30,
         "on-click": "blueman-manager",
-        "tooltip-position": "right,top"
+        "tooltip-position": "right"
     },
     "network": {
         "format": "{ifname}",
@@ -69,11 +69,11 @@
         "tooltip-format-ethernet": "  {ifname} ({ipaddr}/{cidr})",
         "tooltip-format-disconnected": "Disconnected",
         "max-length": 40,
-        "tooltip-position": "right,top"
+        "tooltip-position": "right"
     },
     "custom/power": {
         "format": "",
         "on-click": "wlogout",
-        "tooltip-position": "right,top"
+        "tooltip-position": "right"
     }
 }
