@@ -44,7 +44,7 @@ window#waybar.hidden {
 
 /* #workspaces:hover {
     background: @color2;
-    transform: scale(1.1);
+
 } */
 
 #workspaces {
@@ -74,7 +74,6 @@ window#waybar.hidden {
 
 #custom-rofi:hover, #custom-pacman:hover {
     background: @color4;
-    transform: scale(1.1);
 }
 
 
@@ -99,7 +98,6 @@ window#waybar.hidden {
 
 #hyprland-workspaces button:hover {
     background-color: @color5;
-    transform: scale(1.1);
 }
 
 #custom-power {
