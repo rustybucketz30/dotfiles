@@ -93,6 +93,7 @@ window#waybar.hidden {
     margin-top: 20px;
 }
 
-#custom-power {
+#clock {
     margin-bottom: 20px;
+    font-size: 16px;
 }

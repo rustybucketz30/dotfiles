@@ -30,15 +30,15 @@
         "tooltip": false,
     },
     "custom/rofi": {
-        "format": "",
+        "format": "",
         "on-click": "~/dotfiles/scripts/applauncher.sh",
         "tooltip": false
     },
     "custom/color_toggle": {
-        "format": "",
+        "format": "",
         "exec": "~/dotfiles/scripts/update-colors.sh",
         "on-click": "exec"
-    },
+    },    
     "clock": {
         "timezone": "America/New_York",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
