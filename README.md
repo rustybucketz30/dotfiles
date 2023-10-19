@@ -205,6 +205,7 @@ TODOs:
     -iwctl, device list, station wlan0 scan, station wlan0 show, station wlan0 connect [WiFi name], then enter password, exit, then "archinstall"
     https://www.youtube.com/watch?v=E50pt992Ihc
     - go through installation steps, then 'reboot'
+    - if you get stuck somewher after instlalation, CTRL, ALT, F1,   F2 or some combination of those should get you to a command prompt where you can login and shit
 
 - draw up background image with bucket and name
  - get top 50 AI backgrounds
@@ -227,4 +228,4 @@ gsettings set org.gnome.desktop.interface font-name "JetBrains Mono Regular 11"
 
 NOTES:
  - there is no logout manager (swaylock, etc), b/c mine is a desktop PC and is either off or in use. Install one yourself if you want one
- - 
+ - The install scripts give you no choice, fork the repository and edit the scripts if you want them to install different stuff

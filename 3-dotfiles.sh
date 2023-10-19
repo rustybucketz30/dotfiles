@@ -1,11 +1,4 @@
 #!/bin/bash
-#      _       _    __ _ _           
-#   __| | ___ | |_ / _(_) | ___  ___ 
-#  / _` |/ _ \| __| |_| | |/ _ \/ __|
-# | (_| | (_) | |_|  _| | |  __/\__ \
-#  \__,_|\___/ \__|_| |_|_|\___||___/
-#                                    
-# by Stephan Raabe (2023)
 # ------------------------------------------------------
 # Install Script for dotfiles and configuration
 # yay must be installed
@@ -15,36 +8,8 @@
 # Load Library
 # ------------------------------------------------------
 source $(dirname "$0")/scripts/library.sh
-clear
-echo "     _       _    __ _ _            "
-echo "  __| | ___ | |_ / _(_) | ___  ___  "
-echo " / _' |/ _ \| __| |_| | |/ _ \/ __| "
-echo "| (_| | (_) | |_|  _| | |  __/\__ \ "
-echo " \__,_|\___/ \__|_| |_|_|\___||___/ "
-echo "                                    "
-echo "by Stephan Raabe (2023)"
-echo "-------------------------------------"
-echo ""
-echo "The script will ask for permission to remove existing folders and files."
-echo "But you can decide to keep your local versions by answering with No (Nn)."
-echo "Symbolic links will be created from ~/dotfiles into your home and .config directories."
-echo ""
 
-# ------------------------------------------------------
-# Confirm Start
-# ------------------------------------------------------
-while true; do
-    read -p "DO YOU WANT TO START THE INSTALLATION NOW? (Yy/Nn): " yn
-    case $yn in
-        [Yy]* )
-            echo "Installation started."
-        break;;
-        [Nn]* ) 
-            exit;
-        break;;
-        * ) echo "Please answer yes or no.";;
-    esac
-done
+echo "The script will create symbolic links from ~/dotfiles into your home and .config directories."
 
 # ------------------------------------------------------
 # Create .config folder
@@ -66,7 +31,7 @@ fi
 
 echo ""
 echo "-------------------------------------"
-echo "-> Install general dotfiles"
+echo "-> Installing general dotfiles"
 echo "-------------------------------------"
 echo ""
 
@@ -80,9 +45,10 @@ _installSymLink dunst ~/.config/dunst ~/dotfiles/dunst/ ~/.config
 _installSymLink wal ~/.config/wal ~/dotfiles/wal/ ~/.config
 wal -i screenshots/
 echo "Pywal templates initiated!"
+
 echo ""
 echo "-------------------------------------"
-echo "-> Install GTK dotfiles"
+echo "-> Installing GTK dotfiles"
 echo "-------------------------------------"
 echo ""
 
@@ -92,7 +58,7 @@ _installSymLink .Xresouces ~/.Xresources ~/dotfiles/gtk/.Xresources ~/.Xresource
 _installSymLink .icons ~/.icons ~/dotfiles/gtk/.icons/ ~/
 
 echo "-------------------------------------"
-echo "-> Install Hyprland dotfiles"
+echo "-> Installing Hyprland dotfiles"
 echo "-------------------------------------"
 echo ""
 
