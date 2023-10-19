@@ -1,12 +1,11 @@
 {
-    // "layer": "top", // Waybar at top layer
-    "position": "left", // Waybar position (top|bottom|left|right)
+    "layer": "top",
+    "position": "left",
     "margin": "10 0 10 10",
-    "width": 80, // Waybar width
-    "modules-left": ["custom/pacman","custom/rofi","custom/color_toggle"],
-    "modules-center": ["clock", "hyprland/workspaces"],
-    "modules-right": ["pulseaudio", "backlight", "tray", "network"],
-
+    "width": 80,
+    "modules-left": ["custom/pacman","custom/rofi","custom/color_toggle", "custom/clipboard"],
+    "modules-center": ["hyprland/workspaces"],
+    "modules-right": ["custom/power","pulseaudio", "backlight", "tray", "network", "bluetooth", "clock"],
     "hyprland/workspaces": {
         "on-click": "activate",
         "active-only": false,
@@ -19,16 +18,6 @@
             "4": [],
         },
       },
-
-    "keyboard-state": {
-        //"numlock": true,
-        "capslock": true,
-        "format": "{name} {icon} ",
-        "format-icons": {
-            "locked": " ",
-            "unlocked": ""
-        },
-    },
 
     "custom/pacman": {
         "format": "{} ",
@@ -66,26 +55,30 @@
         "return-type": "json"
     },
 
+    // Pulseaudio
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
-        "reverse-scrolling": 1,
-        "format": "{volume}% {icon} {format_source}",
-        "format-bluetooth": "{volume}% {icon} {format_source}",
-        "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": "婢 {format_source}",
+        "format": "{icon} {volume}%",
+        "format-muted": " {format_source}",
         "format-source": "{volume}% ",
         "format-source-muted": "",
         "format-icons": {
             "headphone": "",
-            "hands-free": "",
-            "headset": "",
+            "hands-free": "",
+            "headset": "",
             "phone": "",
             "portable": "",
             "car": "",
-            "default": ["奄", "奔", "墳"]
+            "default": ["", " ", " "]
         },
-        "on-click": "pavucontrol",
-        "min-length": 13,
+        "on-click": "pavucontrol"
+    },
+    // Bluetooth
+    "bluetooth": {
+        "format-disabled": "",
+        "format-off": "",
+        "interval": 30,
+        "on-click": "blueman-manager"
     },
 
     "tray": {
@@ -103,4 +96,13 @@
         "tooltip-format-disconnected": "Disconnected",
         "max-length": 50
     },
+    "custom/power": {
+        "format": "",
+        "on-click": "wlogout"
+    },
+    "custom/clipboard": {
+        "format": "",
+        "exec": "cliphist.sh",
+        "on-click": "exec"
+    }
 }
