@@ -5,7 +5,7 @@
     border: none;
     border-radius: 5px;
     background-color: rgba(0,0,0,0.8);
-    color: @foreground;
+    color: @background;
 }
 
 window#waybar {
@@ -14,43 +14,11 @@ window#waybar {
     transition-duration: .5s;
 }
 
-#custom-rofi {
-    background-color: @color11;
-}
-
-#pulseaudio {
-    background-color: @color2;
-}
-
-#custom-color_toggle {
-    background-color: @color3;
+#custom-rofi, #pulseaudio, #custom-color_toggle, #custom-power, #clock, #network, #bluetooth, #temperature, #custom-clipboard {
+    background-color: @color0;
 }
 
 #hyprland-workspaces button.active {
     background-color: @color4;
     color: @color0;
-}
-
-#custom-power {
-    background-color: @color5;
-}
-
-#clock {
-    background-color: @color6;
-}
-
-#network {
-    background-color: @color7;
-}
-
-#bluetooth {
-    background-color: @color8;
-}
-
-#temperature {
-    background-color: @color9;
-}
-
-#custom-clipboard {
-    background-color: @color10;
 }

@@ -2,7 +2,6 @@
     "position": "left",
     "height": "96%",
     "width": 50,
-    "background": "transparent",
     "margin": {
         "top": 10,
         "bottom": 10,
