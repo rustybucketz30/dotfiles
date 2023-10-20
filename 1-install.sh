@@ -1,4 +1,160 @@
 #!/bin/bash
+# ------------------------------------------------------------------------------ #
+# Install Script for RustyBucketz30 Arch Linux
+# ------------------------------------------------------------------------------ #
+source $(dirname "$0")/scripts/library.sh
+
+echo ""
+
+while true; do
+    read -p "Start Installation? (Yy/Nn): " yn
+    case $yn in
+        [Yy]* )
+            echo "Installing."
+        break;;
+        [Nn]* ) 
+            exit;
+        break;;
+        * ) echo "Please answer yes or no.";;
+    esac
+done
+echo ""
+
+# Check if yay is installed
+if sudo pacman -Qs yay > /dev/null ; then
+    echo "yay is installed. You can proceed with the installation"
+else
+    echo "yay is not installed. Will be installed now!"
+    git clone https://aur.archlinux.org/yay-git.git ~/yay-git
+    cd ~/yay-git
+    makepkg -si
+    cd ~/dotfiles/
+    clear
+    echo "yay has been installed successfully."
+    echo ""
+fi
+
+echo "-> Installing main packages"
+
+packagesPacman=(
+    # Package Management & Utilities
+    "pacman-contrib"
+    
+    # Terminals & Shells
+    "alacritty"
+    "starship"
+    
+    # Text Editors
+    "neovim"
+    
+    # Launchers & Notifications
+    "rofi"
+    "dunst"
+    
+    # Desktop Customization
+    "nitrogen"
+    "lxappearance"
+    "breeze"
+    "breeze-gtk"
+    
+    # File Management & Utilities
+    "dolphin"
+    "exa"
+    "tumbler"
+    "cliphist"
+    
+    # Fonts
+    "ttf-font-awesome"
+    "ttf-fira-sans"
+    "ttf-fira-code"
+    "ttf-firacode-nerd"
+    
+    # Power Management
+    "xfce4-power-manager"
+    
+    # Programming & Development
+    "python-pip"
+    
+    # Sound
+    "pavucontrol"
+    
+    # Desktop Integration
+    "xdg-desktop-portal-gtk"
+    "xdg-desktop-portal-wlr"
+
+    # System Info Display
+    "neofetch"
+    "btop"
+    
+    # Bluetooth
+    "blueman"
+    "bluez"
+    "bluez-utils"
+
+    # hyperland
+    "hyprland"
+    "waybar"
+)
+
+packagesYay=(
+    # From the first script
+    "pfetch"
+    "bibata-cursor-theme"
+    "kora-icon-theme"
+
+    # From the second script
+    "swww"
+    "wlogout"
+)
+
+# Install packages from official repositories and AUR
+_installPackagesPacman "${packagesPacman[@]}";
+_installPackagesYay "${packagesYay[@]}";
+
+# Install pywal
+if [ -f /usr/bin/wal ]; then
+    echo "pywal already installed."
+else
+    yay --noconfirm -S pywal
+fi
+
+
+# Install .bashrc
+echo "-> Install .bashrc"
+_installSymLink .bashrc ~/.bashrc ~/dotfiles/.bashrc ~/.bashrc
+sudo cp ~/dotfiles/login/issue /etc/issue
+echo "Login prompt installed."
+
+wal -i ~/dotfiles/wallpapers/default.jpg # Init pywal
+
+echo "Finished! Do a sudo reboot."
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#!/bin/bash
 # Install Script for required packages
 # ------------------------------------------------------------------------------ #
 
