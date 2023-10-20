@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sleep 1
-source ~/dotfiles/scripts/library.sh
+source ~/dotfiles/scripts/installer.sh
 clear
 
 # ------------------------------------------------------

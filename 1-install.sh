@@ -2,7 +2,7 @@
 # ------------------------------------------------------------------------------ #
 # Install Script for RustyBucketz30 Arch Linux
 # ------------------------------------------------------------------------------ #
-source $(dirname "$0")/scripts/library.sh
+source $(dirname "$0")/scripts/installer.sh
 
 echo ""
 
@@ -161,7 +161,7 @@ echo "Finished! Do a sudo reboot."
 # ------------------------------------------------------------------------------ #
 # Load Library
 # ------------------------------------------------------------------------------ #
-source $(dirname "$0")/scripts/library.sh
+source $(dirname "$0")/scripts/installer.sh
 clear
 echo ""
 

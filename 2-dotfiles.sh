@@ -7,7 +7,7 @@
 # ------------------------------------------------------
 # Load Library
 # ------------------------------------------------------
-source $(dirname "$0")/scripts/library.sh
+source $(dirname "$0")/scripts/installer.sh
 
 echo "The script will create symbolic links from ~/dotfiles into your home and .config directories."
 
