@@ -11,6 +11,11 @@ body,
   border-radius: 20px;
 }
 
+#waybar:hover,
+.main-container:hover {
+  background-color: rgba(0, 0, 0, 0.9);  /* Slightly darker background on hover */
+}
+
 #workspaces,
 #custom-pacman,
 #custom-rofi,
@@ -46,7 +51,7 @@ window#waybar.hidden {
 }
 
 #workspaces button.active {
-  background-color: @color1;
+  background-color: @color11;
   opacity: 0.9;
   margin: 8px;
   border-radius: 5px;
@@ -78,7 +83,7 @@ window#waybar.hidden {
 #clock:hover {
   transition: all 0.3s ease-in-out;
   background: @background;
-  color: white;
+  color: @color11;
 }
 
 #pulseaudio.muted {
