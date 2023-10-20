@@ -241,3 +241,5 @@ Otherwise, figure it out yourself, sorry
     - Sky Blue: `#87CEFA`
     - Blue Crayola: `#5B82F2`
     - Byzantine Blue: `#2E59D3`
+
+    Local file sharing: https://github.com/localsend/localsend
