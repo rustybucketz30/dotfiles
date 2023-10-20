@@ -100,8 +100,13 @@ window#waybar.hidden {
   font-size: 18px;
 }
 
+/*
 #pulseaudio {
   padding-left: 11px;
+}
+*/
+#pulseaudio {
+  padding-right: 4px;
 }
 
 #network {

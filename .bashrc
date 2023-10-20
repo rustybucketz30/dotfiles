@@ -37,7 +37,7 @@ alias gpl="git pull"
 # SCRIPTS
 alias chat='python ~/mychatgpt/mychatgpt.py'
 alias confb='nvim ~/dotfiles/.bashrc'
-
+alias wallp='exec ~/dotfiles/waybar/launch.sh'
 
 alias update-grub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 eval "$(starship init bash)"
