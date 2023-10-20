@@ -36,7 +36,6 @@ echo "-------------------------------------"
 echo ""
 
 _installSymLink alacritty ~/dotfiles/alacritty/ ~/.config/alacritty
-_installSymLink ranger ~/dotfiles/ranger/ ~/.config/ranger
 _installSymLink vim ~/dotfiles/vim/ ~/.config/vim
 _installSymLink nvim ~/dotfiles/nvim/ ~/.config/nvim
 _installSymLink starship ~/dotfiles/starship/starship.toml ~/.config/starship.toml

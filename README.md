@@ -86,8 +86,6 @@ dotfiles/
 │
 ├── rofi/
 │
-├── ranger/
-│
 ├── nvim/
 │
 ├── login/

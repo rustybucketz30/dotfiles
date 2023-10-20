@@ -12,7 +12,6 @@ alias ls='exa -al'
 alias shutdown='systemctl poweroff'
 alias matrix='cmatrix'
 alias wifi='nmtui'
-alias rw='~/dotfiles/waybar/reload.sh'
 alias winclass="xprop | grep 'CLASS'"
 alias dot="cd ~/dotfiles"
 alias rm="rm -i"
