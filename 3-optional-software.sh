@@ -5,7 +5,7 @@ source $(dirname "$0")/scripts/installer.sh
 echo ""
 
 # List of packages to be installed from pacman
-pacman_packages=("firefox" "mpv" "newsboat" "obs" "gimp" "audacity" "vlc" "xorg-xrandr")
+pacman_packages=("firefox" "mpv" "newsboat" "obs" "gimp" "audacity" "vlc" "xorg-xrandr", "keepassxc")
 
 # List of packages to be installed from yay (AUR)
 yay_packages=("discord" "vscodium" "shotcut" "kdenlive")
