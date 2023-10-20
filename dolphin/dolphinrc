@@ -2,3 +2,13 @@
 EditableUrl=false
 RememberOpenedTabs=true
 ShowFullPath=true
+Version=202
+ViewPropsTimestamp=2023,10,20,15,40,7.8149999999999995
+
+[KFileDialog Settings]
+Places Icons Auto-resize=false
+Places Icons Static Size=22
+
+[MainWindow]
+MenuBar=Disabled
+ToolBarsMovable=Disabled
