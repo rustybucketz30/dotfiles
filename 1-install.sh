@@ -69,6 +69,12 @@ packagesPacman=(
     "cmatrix" # for fun
     "btop" # for performance monitoring
     
+    # wifi - network management
+    "networkmanager" # for network management
+    "network-manager-applet" # the GUI network manager
+    "networkmanager-openvpn" # for VPNs
+    "ufw" # firewall
+
     # Bluetooth
     "blueman"
     "bluez"

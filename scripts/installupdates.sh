@@ -1,12 +1,6 @@
 #!/bin/bash
-
-sleep 1
 source ~/dotfiles/scripts/installer.sh
 clear
-
-# ------------------------------------------------------
-# Confirm Start
-# ------------------------------------------------------
 
 while true; do
     read -p "Update system? (Yy/Nn): " yn
@@ -17,14 +11,9 @@ while true; do
         [Nn]* ) 
             exit;
         break;;
-        * ) echo "Please answer yes or no.";;
+        * ) echo "Type 'y' or 'n'";;
     esac
 done
-
-echo "-----------------------------------------------------"
-echo "Start update"
-echo "-----------------------------------------------------"
-echo ""
 
 yay
 
