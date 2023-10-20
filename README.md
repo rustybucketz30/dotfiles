@@ -70,7 +70,12 @@ dotfiles/
 │ └── alacritty.yml
 │
 ├── wlogout/
-│
+│ ├── layout
+│ ├── logout.png
+│ ├── reboot.png
+│ ├── shutdown.png
+│ └── style.css
+|
 ├── waybar/
 │ ├── config
 │ ├── style.css
@@ -95,11 +100,12 @@ dotfiles/
 ├── dunst/
 │
 ├── .back/
-│
+|
+├── default.jpg
 ├── README.md
-├── 0_install.sh
-├── 1_install.sh
-├── 3_symlink.sh
+├── 1-install.sh
+├── 2-symlink.sh
+├── 3-optional-sw.sh
 └── .bashrc
 
 <!-- None -->
