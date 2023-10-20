@@ -18,6 +18,8 @@ echo "-> Installing general dotfiles"
 _installSymLink alacritty ~/dotfiles/alacritty/ ~/.config/alacritty
 _installSymLink vim ~/dotfiles/vim/ ~/.config/vim
 _installSymLink nvim ~/dotfiles/nvim/ ~/.config/nvim
+_installSymLink dolphinrc ~/dotfiles/dolphin/dolphinrc ~/.config/dolphinrc
+_installSymLink dolphinviewrc ~/dotfiles/dolphin/dolphinviewrc ~/.config/dolphinviewrc
 _installSymLink starship ~/dotfiles/starship/starship.toml ~/.config/starship.toml
 _installSymLink rofi ~/dotfiles/rofi/ ~/.config/rofi
 _installSymLink dunst ~/dotfiles/dunst/ ~/.config/dunst
