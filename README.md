@@ -157,6 +157,13 @@ Super + L = monthly list in md format
 
 ## 7. Installation
 
+- installation steps
+    - flash to installation medium, USB works, use balenaEtcher to flash .iso file onto USB, eject and neter boot menu (F12 on thinkpad, lenono devices - F1 or F2 as well, but that might be UEFI)
+    -iwctl, device list, station wlan0 scan, station wlan0 show, station wlan0 connect [WiFi name], then enter password, exit, then "archinstall"
+    https://www.youtube.com/watch?v=E50pt992Ihc
+    - go through installation steps, then 'reboot'
+    - if you get stuck somewher after instlalation, CTRL, ALT, F1,   F2 or some combination of those should get you to a command prompt where you can login and shit
+
 1. **Clone the Repository**: Clone this repository to your local machine.
 
 ```bash
@@ -210,33 +217,26 @@ https://www.youtube.com/watch?v=nNvciN4sGKQ&t=69s
 https://github.com/abaan404/dotfiles
 
 TODOs:
-- installation steps
-    - flash to installation medium, USB works, use balenaEtcher to flash .iso file onto USB, eject and neter boot menu (F12 on thinkpad, lenono devices - F1 or F2 as well, but that might be UEFI)
-    -iwctl, device list, station wlan0 scan, station wlan0 show, station wlan0 connect [WiFi name], then enter password, exit, then "archinstall"
-    https://www.youtube.com/watch?v=E50pt992Ihc
-    - go through installation steps, then 'reboot'
-    - if you get stuck somewher after instlalation, CTRL, ALT, F1,   F2 or some combination of those should get you to a command prompt where you can login and shit
-
 - draw up background image with bucket and name
- - get top 50 AI backgrounds
- - toggle for black and white
+ - configure file manager ot fit with theme - dolphin configuration is hard i guess
+ - scripting(.sh files):
+  - toggle for black and white
+  - newsboat open, load and mpv fetch for YT video (maybe 2 or 3 scripts)
+  - minecrfat recording setup hotkey
+  - weather widget
+- custom volume mixer/scrollbar thing to manage sound? look for packages?
+- fix install scripts cause they suck - symlinking sucks
+- fix the login screen for /login, or just figure out how to configure ly
 
-- **Kora**: [GitHub](https://github.com/bikass/kora), [AUR Package](https://aur.archlinux.org/packages/kora-icon-theme)
-- **Additional Icon**: [Link](https://www.pling.com/p/1366371)
-- color palette of minecraft bucket:
+NOTES:
+ - there is no logout manager (swaylock, etc), b/c mine is a desktop PC and is either off or in use. Install one yourself if you want one
+ - The install scripts give you no choice, fork the repository and edit the scripts if you want them to install different stuff
+ - no battery icon because this is a desktop PC - always plugged in
+ - minimal on purpose, unix philosophy - do one thing and do it right. dedicated tools for dedicated jobs, OSes are weird because you have to do a lot by nature but segment software to do particular things
+ - color palette of minecraft bucket:
 --white: #FFFFFE;
 --platinum: #D8D8D9;
 --silver: #A8A8A8;
 --sky-blue: #87CEFA;
 --blue-crayola: #5B82F2;
 --byzantine-blue: #2E59D3;
-
-gsettings set org.gnome.desktop.interface gtk-theme adw-gtk3
-gsettings set org.gnome.desktop.interface icon-theme Papirus
-gsettings set org.gnome.desktop.interface font-name "JetBrains Mono Regular 11"
-
-
-NOTES:
- - there is no logout manager (swaylock, etc), b/c mine is a desktop PC and is either off or in use. Install one yourself if you want one
- - The install scripts give you no choice, fork the repository and edit the scripts if you want them to install different stuff
- - no battery icon because this is a desktop PC - always plugged in
