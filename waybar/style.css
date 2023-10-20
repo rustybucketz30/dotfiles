@@ -72,7 +72,7 @@ window#waybar.hidden {
 #bluetooth.connected {
   background-color: @tansparent;
   font-size: 16px;
-  color: @color7;
+  color: @color11;
   opacity: 0.8;
   padding: 0px;
   font-size: 24px;
@@ -83,7 +83,7 @@ window#waybar.hidden {
 #clock:hover {
   transition: all 0.3s ease-in-out;
   background: @background;
-  color: @color11;
+  color: @color1;
 }
 
 #pulseaudio.muted {
