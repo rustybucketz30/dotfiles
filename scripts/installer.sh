@@ -35,18 +35,17 @@ _installPackagesYay() {
     done
 }
 
-# Create symbolic links
 _installSymLink() {
-    symlink="$1"
-    linksource="$2"
-    linktarget="$3"
+    symlinkName="$1"   # This is just the name for logging purposes
+    linkSource="$2"
+    linkTarget="$3"
     
-    # Remove existing symlink, directory, or file
-    [ -L "${symlink}" ] && rm ${symlink}
-    [ -d "${symlink}" ] && rm -rf ${symlink}
-    [ -f "${symlink}" ] && rm ${symlink}
+    # Remove existing symlink, directory, or file at the target location
+    [ -L "${linkTarget}" ] && rm "${linkTarget}"
+    [ -d "${linkTarget}" ] && rm -rf "${linkTarget}"
+    [ -f "${linkTarget}" ] && rm "${linkTarget}"
     
     # Create the new symlink
-    ln -s ${linksource} ${linktarget}
-    echo "Symlink ${linksource} -> ${linktarget} created."
+    ln -s "${linkSource}" "${linkTarget}"
+    echo "Symlink ${linkSource} -> ${linkTarget} created (Named: ${symlinkName})."
 }
