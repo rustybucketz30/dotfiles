@@ -107,11 +107,6 @@ dotfiles/
 ├── 2-symlink.sh
 ├── 3-optional-sw.sh
 └── .bashrc
-
-<!-- None -->
-├── firefox/
-│   └── userChrome.css  # If you plan to style Firefox
-
 ```
 ## 4. Software List & Dependencies
 
@@ -186,62 +181,63 @@ chmod +x 1-install.sh 2-symlink.sh
 Otherwise, figure it out yourself, sorry
 
 ## 8. Appendix
-inspiration dotfiles:
-https://github.com/notwidow/hyprland
-https://github.com/end-4/dots-hyprland/tree/summer-gruv
-https://wiki.hyprland.org/Configuring/Example-configurations/
-https://github.com/fufexan/dotfiles
-https://github.com/taylor85345/cyber-hyprland-theme
-https://christitus.com/my-new-desktop-hyprland/
-https://github.com/hyper-dot/Arch-Hyprland
-https://github.com/archcraft-os/archcraft-hyprland
-https://github.com/nawfalmrouyan/hyprland
-https://github.com/coffebar/dotfiles
-https://gitlab.com/stephan-raabe/dotfiles
 
-https://github.com/linkfrg/dotfiles
-https://github.com/eneshecan/dotfiles
-https://github.com/lauroro/hyprland-dotfiles
-https://github.com/dxg4268/hyprdots
+## Inspiration and Resources
 
-GPU passthrough on this?: https://www.youtube.com/watch?v=EujO_5KvCCo
+### **Dotfiles & Themes**
+- [notwidow/hyprland](https://github.com/notwidow/hyprland)
+- [end-4/dots-hyprland (summer-gruv)](https://github.com/end-4/dots-hyprland/tree/summer-gruv)
+- [fufexan/dotfiles](https://github.com/fufexan/dotfiles)
+- [taylor85345/cyber-hyprland-theme](https://github.com/taylor85345/cyber-hyprland-theme)
+- [hyper-dot/Arch-Hyprland](https://github.com/hyper-dot/Arch-Hyprland)
+- [archcraft-os/archcraft-hyprland](https://github.com/archcraft-os/archcraft-hyprland)
+- [nawfalmrouyan/hyprland](https://github.com/nawfalmrouyan/hyprland)
+- [coffebar/dotfiles](https://github.com/coffebar/dotfiles)
+- [stephan-raabe/dotfiles (GitLab)](https://gitlab.com/stephan-raabe/dotfiles)
+- [linkfrg/dotfiles](https://github.com/linkfrg/dotfiles)
+- [eneshecan/dotfiles](https://github.com/eneshecan/dotfiles)
+- [lauroro/hyprland-dotfiles](https://github.com/lauroro/hyprland-dotfiles)
+- [dxg4268/hyprdots](https://github.com/dxg4268/hyprdots)
+- [prasanthrangan/hyprdots](https://github.com/prasanthrangan/hyprdots)
+- [niraj998/dotfiles (eww config)](https://github.com/niraj998/dotfiles/tree/main/.config/eww)
+- [Saimoomedits/eww-widgets](https://github.com/Saimoomedits/eww-widgets)
+- [elkowar/eww](https://github.com/elkowar/eww)
+- [InioX/dotfiles](https://github.com/InioX/dotfiles/)
+- [abaan404/dotfiles](https://github.com/abaan404/dotfiles)
 
-https://www.youtube.com/watch?v=_nyStxAI75s
-https://github.com/prasanthrangan/hyprdots
-https://github.com/niraj998/dotfiles/tree/main/.config/eww
-https://github.com/Saimoomedits/eww-widgets
-https://github.com/elkowar/eww
-https://elkowar.github.io/eww/
+### **Guides & Documentation**
+- [hyprland.org Example Configurations](https://wiki.hyprland.org/Configuring/Example-configurations/)
+- [eww by elkowar Documentation](https://elkowar.github.io/eww/)
 
-https://github.com/InioX/dotfiles/
+### **Videos**
+- [My New Desktop - Hyprland by Chris Titus](https://christitus.com/my-new-desktop-hyprland/)
+- [GPU Passthrough Guide](https://www.youtube.com/watch?v=EujO_5KvCCo)
+- [Unnamed YouTube Video](https://www.youtube.com/watch?v=_nyStxAI75s)
+- [Unnamed YouTube Video](https://www.youtube.com/watch?v=nNvciN4sGKQ&t=69s)
 
+### TODOs:
+- [ ] Draw up background image with bucket and name.
+- [ ] Configure file manager to fit with the theme - dolphin configuration is challenging.
+- [ ] Scripting (.sh files):
+    - [ ] Toggle for black and white.
+    - [ ] Newsboat open, load, and mpv fetch for YT video (maybe 2 or 3 scripts).
+    - [ ] Minecraft recording setup hotkey.
+    - [ ] Weather widget.
+- [ ] Custom volume mixer/scrollbar to manage sound. Research packages.
+- [ ] Fix install scripts; symlinking is not ideal.
+- [ ] Resolve the login screen for `/login`, or configure `ly`.
+- [ ] Customize Firefox profiles: [Discussion on ycombinator](https://news.ycombinator.com/item?id=37952719)
+- [ ] Customize Firefox with `userChrome.css`.
 
-https://github.com/end-4/dots-hyprland
-https://www.youtube.com/watch?v=nNvciN4sGKQ&t=69s
-https://github.com/abaan404/dotfiles
-
-TODOs:
-- draw up background image with bucket and name
- - configure file manager ot fit with theme - dolphin configuration is hard i guess
- - scripting(.sh files):
-  - toggle for black and white
-  - newsboat open, load and mpv fetch for YT video (maybe 2 or 3 scripts)
-  - minecrfat recording setup hotkey
-  - weather widget
-- custom volume mixer/scrollbar thing to manage sound? look for packages?
-- fix install scripts cause they suck - symlinking sucks
-- fix the login screen for /login, or just figure out how to configure ly
-- custom firefox profiles: https://news.ycombinator.com/item?id=37952719
-
-NOTES:
- - there is no logout manager (swaylock, etc), b/c mine is a desktop PC and is either off or in use. Install one yourself if you want one
- - The install scripts give you no choice, fork the repository and edit the scripts if you want them to install different stuff
- - no battery icon because this is a desktop PC - always plugged in
- - minimal on purpose, unix philosophy - do one thing and do it right. dedicated tools for dedicated jobs, OSes are weird because you have to do a lot by nature but segment software to do particular things
- - color palette of minecraft bucket:
---white: #FFFFFE;
---platinum: #D8D8D9;
---silver: #A8A8A8;
---sky-blue: #87CEFA;
---blue-crayola: #5B82F2;
---byzantine-blue: #2E59D3;
+### Notes:
+- There is no logout manager (e.g., swaylock) because mine is a desktop PC and is either off or in use. Install one if needed.
+- The install scripts offer no choice. Fork the repository and edit the scripts for different installations.
+- No battery icon as it's a desktop PC.
+- Adheres to the UNIX philosophy - do one thing and do it right. The OS has multiple functions by nature but aim to use dedicated tools for specific tasks.
+- Minecraft bucket color palette:
+    - White: `#FFFFFE`
+    - Platinum: `#D8D8D9`
+    - Silver: `#A8A8A8`
+    - Sky Blue: `#87CEFA`
+    - Blue Crayola: `#5B82F2`
+    - Byzantine Blue: `#2E59D3`
