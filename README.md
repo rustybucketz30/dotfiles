@@ -163,11 +163,11 @@ Super + L = monthly list in md format
 git clone [Your Repository Link] ~/dotfiles
 ```
 
-2. **Install Packages & Symlinks**: Use the install script using 'symlink.sh'
+2. **Install Packages & Symlinks**: Use the install script using '2-symlink.sh'
 
 ```bash
 cd ~/dotfiles/scripts
-chmod +x install.sh symlink.sh
+chmod +x 1-install.sh 2-symlink.sh
 ./install.sh
 ./symlink.sh
 ```
@@ -239,3 +239,4 @@ gsettings set org.gnome.desktop.interface font-name "JetBrains Mono Regular 11"
 NOTES:
  - there is no logout manager (swaylock, etc), b/c mine is a desktop PC and is either off or in use. Install one yourself if you want one
  - The install scripts give you no choice, fork the repository and edit the scripts if you want them to install different stuff
+ - no battery icon because this is a desktop PC - always plugged in
