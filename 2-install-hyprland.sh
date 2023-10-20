@@ -4,14 +4,13 @@
 # Confirm Start
 # ------------------------------------------------------
 source $(dirname "$0")/scripts/library.sh
-clear
 echo ""
 
 while true; do
-    read -p "DO YOU WANT TO START THE INSTALLATION NOW? (Yy/Nn): " yn
+    read -p "Start Installation? (Yy/Nn): " yn
     case $yn in
         [Yy]* )
-            echo "Installation started."
+            echo "Installing."
         break;;
         [Nn]* ) 
             exit;

@@ -1,19 +1,17 @@
-#/bin/bash
-
-# ----------------------------------------------------- 
+#!/bin/bash
 # Install Script for required packages
-# ------------------------------------------------------
+# ------------------------------------------------------------------------------ #
 
-# ------------------------------------------------------
+# ------------------------------------------------------------------------------ #
 # Load Library
-# ------------------------------------------------------
+# ------------------------------------------------------------------------------ #
 source $(dirname "$0")/scripts/library.sh
 clear
 echo ""
 
-# ------------------------------------------------------
+# ------------------------------------------------------------------------------ #
 # Check if yay is installed
-# ------------------------------------------------------
+# ------------------------------------------------------------------------------ #
 if sudo pacman -Qs yay > /dev/null ; then
     echo "yay is installed. You can proceed with the installation"
 else
@@ -27,108 +25,97 @@ else
     echo ""
 fi
 
-# ------------------------------------------------------
-# Confirm Start
-# ------------------------------------------------------
-
-while true; do
-    read -p "DO YOU WANT TO START THE INSTALLATION NOW? (Yy/Nn): " yn
-    case $yn in
-        [Yy]* )
-            echo "Installation started."
-        break;;
-        [Nn]* ) 
-            exit;
-        break;;
-        * ) echo "Please answer yes or no.";;
-    esac
-done
-
-# ------------------------------------------------------
+# ------------------------------------------------------------------------------ #
 # Install required packages
-# ------------------------------------------------------
-echo ""
+# ------------------------------------------------------------------------------ #
 echo "-> Installing main packages"
 
 packagesPacman=(
+    # Package Management & Utilities
     "pacman-contrib"
-    "alacritty" 
-    "rofi"
-    "nitrogen" 
-    "dunst" 
+    
+    # Terminals & Shells
+    "alacritty"
     "starship"
-    "neovim" 
-    "mpv" 
-    "freerdp" 
-    "xfce4-power-manager" 
-    "thunar" 
-    "mousepad" 
-    "ttf-font-awesome" 
-    "ttf-fira-sans" 
-    "ttf-fira-code" 
-    "ttf-firacode-nerd" 
-    "lxappearance" 
-    "breeze" 
-    "breeze-gtk" 
-    "vlc" 
-    "exa" 
-    "python-pip" 
-    "python-psutil" 
-    "python-rich" 
-    "python-click" 
+    
+    # Text Editors
+    "neovim"
+    
+    # Launchers & Notifications
+    "rofi"
+    "dunst"
+    
+    # Desktop Customization
+    "nitrogen"
+    "lxappearance"
+    "breeze"
+    "breeze-gtk"
+    
+    # File Management & Utilities
+    "dolphin"
+    "exa"
+    "tumbler"
+    
+    # Fonts
+    "ttf-font-awesome"
+    "ttf-fira-sans"
+    "ttf-fira-code"
+    "ttf-firacode-nerd"
+    
+    # Power Management
+    "xfce4-power-manager"
+    
+    # Programming & Development
+    "python-pip"
+    
+    # Sound
+    "pavucontrol"
+    
+    # Desktop Integration
     "xdg-desktop-portal-gtk"
-    "pavucontrol" 
-    "tumbler" 
-    "blueman"
-    "nautilus"
+    
+    # System Info Display
     "neofetch"
+    "btop"
+    
+    # Bluetooth
+    "blueman"
+    "bluez"
+    "bluez-utils"
 );
 
 packagesYay=(
     "pfetch" 
     "bibata-cursor-theme" 
-    "trizen"
     "kora-icon-theme"
 );
   
-# ------------------------------------------------------
-# Install required packages
-# ------------------------------------------------------
+# Install packages from official repositories and AUR
 _installPackagesPacman "${packagesPacman[@]}";
 _installPackagesYay "${packagesYay[@]}";
 
-# ------------------------------------------------------
+# ------------------------------------------------------------------------------ #
 # Install pywal
-# ------------------------------------------------------
+# ------------------------------------------------------------------------------ #
 if [ -f /usr/bin/wal ]; then
     echo "pywal already installed."
 else
     yay --noconfirm -S pywal
 fi
 
-clear
-
-# ------------------------------------------------------
+# ------------------------------------------------------------------------------ #
 # Install .bashrc
-# ------------------------------------------------------
-echo ""
+# ------------------------------------------------------------------------------ #
 echo "-> Install .bashrc"
 
 _installSymLink .bashrc ~/.bashrc ~/dotfiles/.bashrc ~/.bashrc
 sudo cp ~/dotfiles/login/issue /etc/issue
 echo "Login prompt installed."
 
+wal -i ~/dotfiles/wallpapers/default.jpg # Init pywal
 
-# ------------------------------------------------------
-# Init pywal
-# ------------------------------------------------------
-echo ""
-echo "-> Init pywal"
-wal -i ~/dotfiles/wallpapers/default.jpg
-echo "pywal initiated."
 
-# ------------------------------------------------------
+# ------------------------------------------------------------------------------ #
 # DONE
-# ------------------------------------------------------
-clear
+# ------------------------------------------------------------------------------ #
 echo "DONE!"
