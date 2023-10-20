@@ -70,9 +70,9 @@ window#waybar.hidden {
 #network,
 #bluetooth.on,
 #bluetooth.connected {
-  background-color: @color11;
+  background-color: transparent;
   font-size: 16px;
-  color: @color11;
+  color: @background;
   opacity: 0.8;
   padding: 0px;
   font-size: 24px;
