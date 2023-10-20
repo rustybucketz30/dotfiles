@@ -227,6 +227,7 @@ TODOs:
 - custom volume mixer/scrollbar thing to manage sound? look for packages?
 - fix install scripts cause they suck - symlinking sucks
 - fix the login screen for /login, or just figure out how to configure ly
+- custom firefox profiles: https://news.ycombinator.com/item?id=37952719
 
 NOTES:
  - there is no logout manager (swaylock, etc), b/c mine is a desktop PC and is either off or in use. Install one yourself if you want one
