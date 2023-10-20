@@ -1,26 +1,11 @@
 #!/bin/bash
-# ------------------------------------------------------------------------------ #
 # Install Script for RustyBucketz30 Arch Linux
-# ------------------------------------------------------------------------------ #
+# ----------------------------------------------------------------------------------------- #
 source $(dirname "$0")/scripts/installer.sh
 
-echo ""
-
-while true; do
-    read -p "Start Installation? (Yy/Nn): " yn
-    case $yn in
-        [Yy]* )
-            echo "Installing."
-        break;;
-        [Nn]* ) 
-            exit;
-        break;;
-        * ) echo "Please answer yes or no.";;
-    esac
-done
-echo ""
-
 # Check if yay is installed
+# ----------------------------------------------------------------------------------------- #
+
 if sudo pacman -Qs yay > /dev/null ; then
     echo "yay is installed. You can proceed with the installation"
 else
@@ -35,27 +20,27 @@ else
 fi
 
 echo "-> Installing main packages"
-
+# ----------------------------------------------------------------------------------------- #
 packagesPacman=(
     # Package Management & Utilities
-    "pacman-contrib"
+    "pacman-contrib" # pacman utilities
     
     # Terminals & Shells
-    "alacritty"
-    "starship"
+    "alacritty" # for terminal management
+    "starship" # for CLI customization
     
     # Text Editors
-    "neovim"
+    "neovim" 
     
     # Launchers & Notifications
-    "rofi"
-    "dunst"
+    "rofi" # for launching applications
+    "dunst" # for notifications
     
     # Desktop Customization
-    "nitrogen"
-    "lxappearance"
-    "breeze"
-    "breeze-gtk"
+    "nitrogen" # for wallpapers
+    "lxappearance" # for theming
+    "breeze" # for theming
+    "breeze-gtk" # for theming
     
     # File Management & Utilities
     "dolphin"
@@ -69,22 +54,20 @@ packagesPacman=(
     "ttf-fira-code"
     "ttf-firacode-nerd"
     
-    # Power Management
-    "xfce4-power-manager"
-    
     # Programming & Development
-    "python-pip"
+    "python-pip" # for python stuff
     
     # Sound
-    "pavucontrol"
+    "pavucontrol" # for volume control
     
     # Desktop Integration
-    "xdg-desktop-portal-gtk"
-    "xdg-desktop-portal-wlr"
+    "xdg-desktop-portal-gtk" # needed for theming
+    "xdg-desktop-portal-wlr" # needed for theming
 
     # System Info Display
-    "neofetch"
-    "btop"
+    "neofetch" # to flex
+    "cmatrix" # for fun
+    "btop" # for performance monitoring
     
     # Bluetooth
     "blueman"
@@ -92,24 +75,27 @@ packagesPacman=(
     "bluez-utils"
 
     # hyperland
-    "hyprland"
-    "waybar"
+    "hyprland" # window manager
+    "waybar" # for status bar 
 )
 
 packagesYay=(
     # From the first script
-    "pfetch"
-    "bibata-cursor-theme"
-    "kora-icon-theme"
+    "pfetch" # to flex
+    "bibata-cursor-theme" # cursor theme
+    "kora-icon-theme" # icon theme
 
     # From the second script
-    "swww"
-    "wlogout"
+    "swww" # for wallpapers
+    "wlogout" # for logging out
 )
+# ----------------------------------------------------------------------------------------- #
 
 # Install packages from official repositories and AUR
 _installPackagesPacman "${packagesPacman[@]}";
 _installPackagesYay "${packagesYay[@]}";
+
+# ----------------------------------------------------------------------------------------- #
 
 # Install pywal
 if [ -f /usr/bin/wal ]; then
@@ -118,15 +104,16 @@ else
     yay --noconfirm -S pywal
 fi
 
-
+# ----------------------------------------------------------------------------------------- #
 # Install .bashrc
-echo "-> Install .bashrc"
+echo "-> Installing .bashrc"
 _installSymLink .bashrc ~/.bashrc ~/dotfiles/.bashrc ~/.bashrc
+
+# Install login prompt and init pywal
 sudo cp ~/dotfiles/login/issue /etc/issue
-echo "Login prompt installed."
+wal -i ~/dotfiles/wallpapers/default.jpg
 
-wal -i ~/dotfiles/wallpapers/default.jpg # Init pywal
-
+# ----------------------------------------------------------------------------------------- #
 echo "Finished! Do a sudo reboot."
 
 

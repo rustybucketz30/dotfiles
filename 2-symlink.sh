@@ -1,21 +1,8 @@
 #!/bin/bash
-# ------------------------------------------------------
-# Install Script for dotfiles and configuration
-# yay must be installed
-# ------------------------------------------------------
-
-# ------------------------------------------------------
-# Load Library
-# ------------------------------------------------------
 source $(dirname "$0")/scripts/installer.sh
-
-echo "The script will create symbolic links from ~/dotfiles into your home and .config directories."
-
-# ------------------------------------------------------
-# Create .config folder
-# ------------------------------------------------------
-echo ""
-echo "-> Check if .config folder exists"
+echo "This script creates symlinks between ~/dotfiles and ~/.config directories."
+echo "-> Checking if ~/.config exists"
+# ----------------------------------------------------------------------------------------- #
 
 if [ -d ~/.config ]; then
     echo ".config folder already exists."
@@ -24,16 +11,9 @@ else
     echo ".config folder created."
 fi
 
-# ------------------------------------------------------
-# Create symbolic links
-# ------------------------------------------------------
-# name symlink source target
 
-echo ""
-echo "-------------------------------------"
 echo "-> Installing general dotfiles"
-echo "-------------------------------------"
-echo ""
+# ----------------------------------------------------------------------------------------- #
 
 _installSymLink alacritty ~/dotfiles/alacritty/ ~/.config/alacritty
 _installSymLink vim ~/dotfiles/vim/ ~/.config/vim
@@ -53,7 +33,7 @@ _installSymLink waybar ~/dotfiles/waybar/ ~/.config/waybar
 _installSymLink wlogout ~/dotfiles/wlogout/ ~/.config/wlogout
 _installSymLink swappy ~/dotfiles/swappy/ ~/.config/swappy
 _installSymLink ly ~/dotfiles/ly/config.ini ~/etc/ly/config.ini 
-# ------------------------------------------------------
-# DONE
-# ------------------------------------------------------
+
+# ----------------------------------------------------------------------------------------- #
+
 echo "DONE! Please reboot your system!"
