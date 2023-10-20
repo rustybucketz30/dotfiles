@@ -35,38 +35,25 @@ echo "-> Installing general dotfiles"
 echo "-------------------------------------"
 echo ""
 
-_installSymLink alacritty ~/.config/alacritty ~/dotfiles/alacritty/ ~/.config
-_installSymLink ranger ~/.config/ranger ~/dotfiles/ranger/ ~/.config
-_installSymLink vim ~/.config/vim ~/dotfiles/vim/ ~/.config
-_installSymLink nvim ~/.config/nvim ~/dotfiles/nvim/ ~/.config
-_installSymLink starship ~/.config/starship.toml ~/dotfiles/starship/starship.toml ~/.config/starship.toml
-_installSymLink rofi ~/.config/rofi ~/dotfiles/rofi/ ~/.config
-_installSymLink dunst ~/.config/dunst ~/dotfiles/dunst/ ~/.config
-_installSymLink wal ~/.config/wal ~/dotfiles/wal/ ~/.config
+_installSymLink alacritty ~/dotfiles/alacritty/ ~/.config/alacritty
+_installSymLink ranger ~/dotfiles/ranger/ ~/.config/ranger
+_installSymLink vim ~/dotfiles/vim/ ~/.config/vim
+_installSymLink nvim ~/dotfiles/nvim/ ~/.config/nvim
+_installSymLink starship ~/dotfiles/starship/starship.toml ~/.config/starship.toml
+_installSymLink rofi ~/dotfiles/rofi/ ~/.config/rofi
+_installSymLink dunst ~/dotfiles/dunst/ ~/.config/dunst
+_installSymLink wal ~/dotfiles/wal/ ~/.config/wal
 wal -i screenshots/
 echo "Pywal templates initiated!"
-
-echo ""
-echo "-------------------------------------"
-echo "-> Installing GTK dotfiles"
-echo "-------------------------------------"
-echo ""
-
-_installSymLink .gtkrc-2.0 ~/.gtkrc-2.0 ~/dotfiles/gtk/.gtkrc-2.0 ~/.gtkrc-2.0
-_installSymLink gtk-3.0 ~/.config/gtk-3.0 ~/dotfiles/gtk/gtk-3.0/ ~/.config/
-_installSymLink .Xresouces ~/.Xresources ~/dotfiles/gtk/.Xresources ~/.Xresources
-_installSymLink .icons ~/.icons ~/dotfiles/gtk/.icons/ ~/
-
-echo "-------------------------------------"
-echo "-> Installing Hyprland dotfiles"
-echo "-------------------------------------"
-echo ""
-
-_installSymLink hypr ~/.config/hypr ~/dotfiles/hypr/ ~/.config
-_installSymLink waybar ~/.config/waybar ~/dotfiles/waybar/ ~/.config
-_installSymLink wlogout ~/.config/wlogout ~/dotfiles/wlogout/ ~/.config
-_installSymLink swappy ~/.config/swappy ~/dotfiles/swappy/ ~/.config
-_installSymLink ly ~/etc/ly/config.ini ~/dotfiles/ly/config.ini ~/etc
+_installSymLink .gtkrc-2.0 ~/dotfiles/gtk/.gtkrc-2.0 ~/.gtkrc-2.0
+_installSymLink gtk-3.0 ~/dotfiles/gtk/gtk-3.0/ ~/.config/gtk-3.0
+_installSymLink .Xresources ~/dotfiles/gtk/.Xresources ~/.Xresources
+_installSymLink .icons ~/dotfiles/gtk/.icons/ ~/.icons
+_installSymLink hypr ~/dotfiles/hypr/ ~/.config/hypr
+_installSymLink waybar ~/dotfiles/waybar/ ~/.config/waybar
+_installSymLink wlogout ~/dotfiles/wlogout/ ~/.config/wlogout
+_installSymLink swappy ~/dotfiles/swappy/ ~/.config/swappy
+_installSymLink ly ~/dotfiles/ly/config.ini ~/etc/ly/config.ini 
 # ------------------------------------------------------
 # DONE
 # ------------------------------------------------------
