@@ -224,10 +224,11 @@ Otherwise, figure it out yourself, sorry
     - [ ] Minecraft recording setup hotkey.
     - [ ] Weather widget.
 - [ ] Custom volume mixer/scrollbar to manage sound. Research packages.
-- [ ] Fix install scripts; symlinking is not ideal.
-- [ ] Resolve the login screen for `/login`, or configure `ly`.
 - [ ] Customize Firefox profiles: [Discussion on ycombinator](https://news.ycombinator.com/item?id=37952719)
 - [ ] Customize Firefox with `userChrome.css`.
+- [ ] Fix Graphic Driver to play Minecraft
+- [ ] Virtual Machine to Play Zombies?
+- [ ] Fix .bashrc in install scripts, move symlink to the ./2-symlink.sh script
 
 ### Notes:
 - There is no logout manager (e.g., swaylock) because mine is a desktop PC and is either off or in use. Install one if needed.
@@ -243,3 +244,7 @@ Otherwise, figure it out yourself, sorry
     - Byzantine Blue: `#2E59D3`
 
     Local file sharing: https://github.com/localsend/localsend
+NVIDIA Drivers Install (worked for Minecraft): https://github.com/korvahannu/arch-nvidia-drivers-installation-guide/tree/da2f43f3cf8c866a5b30d38c77e29de3cdaa0746
+
+
+
