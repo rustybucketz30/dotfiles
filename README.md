@@ -91,7 +91,7 @@ dotfiles/
 │
 ├── rofi/
 │
-├── nvim/
+├── nvim/https://github.com/yt-dlp/yt-dlp/wiki/Installation
 │
 ├── login/
 │
@@ -247,4 +247,4 @@ Otherwise, figure it out yourself, sorry
 NVIDIA Drivers Install (worked for Minecraft): https://github.com/korvahannu/arch-nvidia-drivers-installation-guide/tree/da2f43f3cf8c866a5b30d38c77e29de3cdaa0746
 
 
-
+installing yt-dlp: https://github.com/yt-dlp/yt-dlp/wiki/Installation
