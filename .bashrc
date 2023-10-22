@@ -14,6 +14,7 @@ alias matrix='cmatrix'
 alias wifi='nmtui'
 alias winclass="xprop | grep 'CLASS'"
 alias dot="cd ~/dotfiles"
+alias matrix="cmatrix -r -b -a -u 3"
 # alias rm="rm -i"
 # alias cp="cp -i"
 # alias mv="mv -i"
