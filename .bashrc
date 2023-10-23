@@ -15,19 +15,6 @@ alias wifi='nmtui'
 alias winclass="xprop | grep 'CLASS'"
 alias dot="cd ~/dotfiles"
 alias matrix="cmatrix -r -b -a -u 3"
-# alias rm="rm -i"
-# alias cp="cp -i"
-# alias mv="mv -i"
-
-# New ones
-# alias Hy="Hyprland"
-# alias obs="obs-studio"
-# alias news="newsboat"
-# alias mc="minecraft-launcher"
-# alias kp="keepassxc ~/dotfiles/config.kdbx"
-# alias kpm="keepassxc ~/dotfiles/config.kdbx --keyfile ~/dotfiles/config.key"
-alias notes='vim ~/notes.txt'
-
 
 # GIT
 alias ga="git add"
@@ -36,7 +23,6 @@ alias gp="git push"
 alias gpl="git pull"
 
 # SCRIPTS
-alias chat='python ~/mychatgpt/mychatgpt.py'
 alias confb='nvim ~/dotfiles/.bashrc'
 alias wallp='exec ~/dotfiles/waybar/launch.sh'
 

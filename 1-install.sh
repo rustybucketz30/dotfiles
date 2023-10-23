@@ -111,9 +111,6 @@ else
 fi
 
 # ----------------------------------------------------------------------------------------- #
-# Install .bashrc
-echo "-> Installing .bashrc"
-_installSymLink .bashrc ~/.bashrc ~/dotfiles/.bashrc ~/.bashrc
 
 # Install login prompt and init pywal
 sudo cp ~/dotfiles/login/issue /etc/issue

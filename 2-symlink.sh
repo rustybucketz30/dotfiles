@@ -15,6 +15,7 @@ fi
 echo "-> Installing general dotfiles"
 # ----------------------------------------------------------------------------------------- #
 
+_installSymLink .basrc ~/dotfiles/.bashrc ~/.config/.bashrc
 _installSymLink alacritty ~/dotfiles/alacritty/ ~/.config/alacritty
 _installSymLink vim ~/dotfiles/vim/ ~/.config/vim
 _installSymLink nvim ~/dotfiles/nvim/ ~/.config/nvim
@@ -34,7 +35,6 @@ _installSymLink hypr ~/dotfiles/hypr/ ~/.config/hypr
 _installSymLink waybar ~/dotfiles/waybar/ ~/.config/waybar
 _installSymLink wlogout ~/dotfiles/wlogout/ ~/.config/wlogout
 _installSymLink swappy ~/dotfiles/swappy/ ~/.config/swappy
-_installSymLink ly ~/dotfiles/ly/config.ini ~/etc/ly/config.ini 
 
 # ----------------------------------------------------------------------------------------- #
 
