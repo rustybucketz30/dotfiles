@@ -121,13 +121,6 @@ A collection of various GUI-based software for multiple purposes.
 
 ## 5. Installation
 
-- installation steps
-    - flash to installation medium, USB works, use balenaEtcher to flash .iso file onto USB, eject and neter boot menu (F12 on thinkpad, lenono devices - F1 or F2 as well, but that might be UEFI)
-    -iwctl, device list, station wlan0 scan, station wlan0 show, station wlan0 connect [WiFi name], then enter password, exit, then "archinstall"
-    https://www.youtube.com/watch?v=E50pt992Ihc
-    - go through installation steps, then 'reboot'
-    - if you get stuck somewher after instlalation, CTRL, ALT, F1,   F2 or some combination of those should get you to a command prompt where you can login and shit
-
 1. **Clone the Repository**: Clone this repository to your local machine.
 
 ```bash
