@@ -42,51 +42,25 @@
 dotfiles/
 │
 ├── hypr/
-│ ├── hyprland.conf
-│ ├── keybindings.conf
-│ ├── starthypr.sh
-│ └── gtk.sh
-│
 ├── alacritty/
-│ └── alacritty.yml
-│
 ├── wlogout/
-│ ├── layout
-│ ├── logout.png
-│ ├── reboot.png
-│ ├── shutdown.png
-│ └── style.css
-|
 ├── waybar/
-│ ├── config
-│ ├── style.css
-│ └── launch.sh
-|
 ├── wallpapers/
-│
 ├── wal/
-│
 ├── vim/
-│
 ├── scripts/
-│
 ├── rofi/
-│
 ├── nvim/
-│
 ├── login/
-│
 ├── gtk/
-│
 ├── dunst/
-│
-|
-├── default.jpg
+├── SampleBackgrounds.png
 ├── README.md
 ├── 1-install.sh
 ├── 2-symlink.sh
 └── .bashrc
 ```
+
 ## 3. GUI Software:
 A collection of various GUI-based software for multiple purposes.
 
